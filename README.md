@@ -292,35 +292,273 @@ Check out this Youtube video that explains the weather app code and functionalit
 <h4>CSS</h4>
 <h4>JavaScript</h4>
 
-<h3>5. </h3>
+<h3>5. Music Events</h3>
+Here, we’ll introduce you to event listeners that will act on keyboard events. For example, an event will take place if the ‘S’ key is pressed. Each one will have a different code and action. 
+
+Apart from event listeners, we will also learn how to add and play audio files. Note that we have added very basic CSS, as the focus here is on JavaScript. You will have to import your own sounds and background image for the program to work fully.
+<h4>HTML</h4>
+
+```
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>KeyBoard Music</title>
+</head>
+<body>
+ <div class="keys">
+   <div data-key="65" class="key">
+     <kbd>A</kbd>
+   </div>
+   <div data-key="83" class="key">
+     <kbd>S</kbd>
+   </div>
+   <div data-key="68" class="key">
+     <kbd>D</kbd>
+   </div>
+   <div data-key="70" class="key">
+     <kbd>F</kbd>
+   </div>
+   <div data-key="71" class="key">
+     <kbd>G</kbd>
+   </div>
+   <div data-key="72" class="key">
+     <kbd>H</kbd>
+   </div>
+   <div data-key="74" class="key">
+     <kbd>J</kbd>
+   </div>
+   <div data-key="75" class="key">
+     <kbd>K</kbd>
+   </div>
+   <div data-key="76" class="key">
+     <kbd>L</kbd>
+   </div>
+ </div>
+ <audio data-key="65" src="sounds/clap.wav"></audio>
+ <audio data-key="83" src="sounds/chord.wav"></audio>
+ <audio data-key="68" src="sounds/ride.wav"></audio>
+ <audio data-key="70" src="sounds/openhat.wav"></audio>
+ <audio data-key="71" src="sounds/tink.wav"></audio>
+ <audio data-key="72" src="sounds/kick.wav"></audio>
+ <audio data-key="74" src="sounds/swipe.wav"></audio>
+ <audio data-key="75" src="sounds/tom.wav"></audio>
+ <audio data-key="76" src="sounds/boom.wav"></audio>
+</body>
+<script>
+function removeTransition(event) {
+ if (event.propertyName !== 'transform') return
+ event.target.classList.remove('playing')
+}
+function playSound(event) {
+ const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`)
+ const key = document.querySelector(`div[data-key="${event.keyCode}"]`)
+ if (!audio) return
+ key.classList.add('playing')
+ audio.currentTime = 0
+ audio.play()
+}
+const keys = Array.from(document.querySelectorAll('.key'))
+keys.forEach((key) => key.addEventListener('transitionend', removeTransition))
+window.addEventListener('keydown', playSound)
+</script>
+<style>
+html {
+ font-size: 12px;
+ background: url('drums.jpg') top center;
+ background-size: 80%;
+}
+.keys {
+ display: flex;
+ flex: 1;
+ align-items: top;
+ justify-content: center;
+}
+.key {
+ border: 0.4rem solid blue;
+ border-radius: 0.5rem;
+ margin: 1rem;
+ font-size: 2rem;
+ padding: 1rem 0.5rem;
+ transition: all 0.01s ease;
+ width: 5rem;
+ text-align: center;
+ color: black;
+ text-shadow: 0 0 0.5rem yellow;
+}
+</style>
+</html>
+```
+
+<h4>CSS</h4>
+<h4>JavaScript</h4>
+
+
+<h3>6. Form Validation</h3>
+Form validation is a useful aspect and used by many websites for client-side validation of user information, such as card and address details. For example, if there is a mandatory input field name, the user may type a number, leave the field blank, or type just one letter. JS can validate this information. 
+
+The project below involves simple form validation. Of course, the project will need HTML elements as well. We have not carried out any extensive styling, only including basic elements in the HTML itself. 
+
+Here is the complete code of a simple form with basic validations:
+
+```
+<html>
+  <head>
+     <title>Form Validation</title>
+        <script type = "text/javascript">
+        function validate() {
+        var text;
+           if( document.myForm.name.value == "" ) {
+             text = "Name cannot be empty";
+              document.getElementById("demo").innerHTML = text;
+              document.myForm.name.focus() ;
+              return false;
+           }
+           if( document.myForm.email.value == "" ) {
+             text = "E-mail cannot be empty";
+              document.getElementById("demo").innerHTML = text;
+              document.myForm.email.focus() ;
+              return false;
+           }
+      var emailID = document.myForm.email.value;
+      atposn = emailID.indexOf("@");
+      dotposn = emailID.lastIndexOf(".");
+      if (atposn < 1 || ( dotposn - atposn < 2 )) {
+      text = "Please enter valid email ID";
+      document.getElementById("demo").innerHTML = text;
+      document.myForm.email.focus() ;
+      return false;
+    }
+           if( document.myForm.phone.value == "" || isNaN( document.myForm.phone.value ) ||
+              document.myForm.phone.value.length != 10 ) {
+              text = "Please enter a valid 10-digit phone number";
+              document.getElementById("demo").innerHTML = text;
+              document.myForm.phone.focus() ;
+              return false;
+           }
+           if( document.myForm.subject.value == "0" ) {
+              text = "Please provide your area of expertise";
+              document.getElementById("demo").innerHTML = text;
+              return false;
+           }
+           return( true );
+        }
+     </script>
+  </head>
+  <body>
+     <form action = "" name = "myForm" onsubmit = "return(validate());">
+   	 <h1 align="center">USER REGISTRATION</H1>
+        <table align="center" cellspacing = "3" cellpadding = "3" border = "3">
+           <tr>
+              <td align = "right">Name</td>
+              <td><input type = "text" name = "name" /></td>
+           </tr>
+           <tr>
+              <td align = "right">E-mail</td>
+              <td><input type = "text" name = "email" /></td>
+           </tr>
+           <tr>
+              <td align = "right">Phone Number</td>
+              <td><input type = "text" name = "phone" /></td>
+           </tr>
+           <tr>
+              <td align = "right">Subject</td>
+              <td>
+                 <select name = "subject">
+                    <option value = "0" selected>Select</option>
+                    <option value = "1">HTML</option>
+                    <option value = "2">JavaScript</option>
+                    <option value = "3">CSS</option>
+                    <option value = "4">JSP</option>
+                 </select>
+              </td>
+           </tr>
+        </table>
+        <p id="demo" style="color:red; text-align:center"></p>
+  <div style="text-align:center"><input type = "submit" value = "Submit" /></div>
+     </form>
+  </body>
+</html>
+```
 
 <h4>HTML</h4>
 <h4>CSS</h4>
 <h4>JavaScript</h4>
 
 
-<h3>6. </h3>
+<h3>7. Photo Details Display</h3>
+Here, we will display some images on a web page. Once the user hovers over the images, more details will appear. You can download images from anywhere or use the ones you already have. 
+
+Again, we have used basic HTML and CSS along with JS. The latter carries out most of the work. You will learn how mouse hover (over and out) events work through this project.
+
+```
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>My Sun Sign Infos</title>
+ </head>
+ <script>
+ function display(element){
+   document.getElementById('image').innerHTML = element.alt;
+ }
+ function revert(){
+   document.getElementById('image').innerHTML = "Hover over a sunsign image to display details.";
+ }
+</script>
+ <style>
+ #image{
+     width: 650px;
+     height: 70px;
+     border:5px solid pink;
+     background-color: black;
+     background-repeat: no-repeat;
+     color:white;
+     background-size: 100%;
+     font-family: Didot;
+     font-size: 150%;
+     line-height: 60px;
+     text-align: center;
+ }
+ img{
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ }
+ </style>
+ <body>
+   <div>
+   <p id = "image">Hover over a sunsign image to display details.<p>
+   <img alt = "Sagittarius are beautiful, loyal and passionate." src = "saggi.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+   <img alt = "Pisces are dreamy, helpful and love everyone!" src = "pisces.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+   <img alt = "Leo are strong and fearless. They aim for and achieve a lot!" src = "leo.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+   <img alt = "Scorpions are friends for life. They are trustworthy and truthful." src = "scorpio.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+   </div>
+ </body>
+</html>
+```
+
+To make this project more complex, try this slideshow project from W3Schools. You can change the onClick events to onmousehover and onmouseout events, in which case, the images will change once the user hovers over the images.
 
 <h4>HTML</h4>
 <h4>CSS</h4>
 <h4>JavaScript</h4>
 
 
-<h3>7. </h3>
+<h3>8. Build an Interactive Landing Page</h3>
+This project involves building a dynamic landing page that stores your name and text written in local storage, and shows you an appropriate image and greeting message based on the day's time. This YouTube video will help you learn about this project’s JS components.
+
+https://www.youtube.com/watch?v=fSTQzlprGLI
+
 
 <h4>HTML</h4>
 <h4>CSS</h4>
 <h4>JavaScript</h4>
 
 
-<h3>8. </h3>
+<h3>9. Single Page Application</h3>
+Here, the page won’t reload upon navigating the side links, but the content will change. Again, we will use eventListeners to change the view from one link to another. Check out the code and explanation on this YouTube video.
 
-<h4>HTML</h4>
-<h4>CSS</h4>
-<h4>JavaScript</h4>
-
-
-<h3>9. </h3>
+https://www.youtube.com/watch?v=6BozpmSjk-Y
 
 <h4>HTML</h4>
 <h4>CSS</h4>
