@@ -19,12 +19,12 @@ JS is the heart of any web application. Good knowledge of JavaScript can get you
 <h3>Best JavaScript Projects for Beginners</h3>
 There is a lot you can do with JavaScript, but we don’t want to overwhelm you with everything yet. We have listed the top JavaScript projects that can add value to your resume as well as a career:
 
-1. JavaScript Calculator
+<h3>1. JavaScript Calculator</h3>
 We will use simple HTML, CSS, and make all the components work using basic JavaScript functions. To display buttons and numbers, we will use HTML, and add some beautification to them using CSS. To make the buttons perform the respective functions we will use JavaScript. The main function is eval(), which is a global JS function that solves JS codes. The display() function will display the selected number on the calculator screen. Note that the program will work only for mouse events. Here is the complete code:
 
-```[html]
-HTML:
+<h4>HTML</h4>
 
+```[html]
 <div class="calculator">
 
   <input type="text" class="calculator-screen" value="" disabled />
@@ -60,6 +60,8 @@ HTML:
   </div>
 </div>
 ```
+
+<h4>CSS</h4>
 
 ```css
 html {
@@ -145,6 +147,8 @@ button:hover {
   padding: 20px;
 }
 ```
+
+<h4>JavaScript</h4>
 
 ```js
 const calculator = {
@@ -260,6 +264,64 @@ keys.addEventListener('click', event => {
 });
 ```
 
-2. Hangman Game
+<h3>2. Hangman Game</h3>
+
+Hangman is a well-known game, and one of our simple JS projects. You can develop it in a jiffy using JavaScript, HTML, and CSS. Note that the main functionality is defined using JS. HTML is for display, and CSS does the job of beautifying the contents. 
+
+Many methods are defined in the JS code, so it may seem a bit complicated, but you will realize it is simple once you read the code thoroughly. You can also run the code and see the execution line by line.
+
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h4>JavaScript</h4>
+
+<h3>3. Tic Tac Toe Game</h3>
+JavaScript makes it easy to develop a Tic-Tac-Toe game yourself. You can look at the entire code here, and it explains how to build a 3x3 tic-tac-toe step by step. Then, you can later expand to NxN for your own practice and knowledge. The HTML and CSS for the project are quite simple. The author first starts with pseudocode and then goes on to explain each function individually.
+
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h4>JavaScript</h4>
+
+<h3>4. Weather App</h3>
+Weather apps are also popular JavaScript projects. Once you change the location name in this project, the weather display changes immediately without a page refresh. The UI is also quite sleek. 
+
+Note that most weather apps use an API that gets the weather data. We will use the popular and most common API, OpenWeatherMap. 
+
+Check out this Youtube video that explains the weather app code and functionality in detail. There are three files, as usual: index.html, main.js, and main.css. Although you can put all the code in a single file (HTML), it is more convenient to maintain separate files. 
+
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h4>JavaScript</h4>
+
+<h3>5. </h3>
+
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h4>JavaScript</h4>
 
 
+<h3>6. </h3>
+
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h4>JavaScript</h4>
+
+
+<h3>7. </h3>
+
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h4>JavaScript</h4>
+
+
+<h3>8. </h3>
+
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h4>JavaScript</h4>
+
+
+<h3>9. </h3>
+
+<h4>HTML</h4>
+<h4>CSS</h4>
+<h4>JavaScript</h4>
