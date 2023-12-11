@@ -22,7 +22,8 @@ There is a lot you can do with JavaScript, but we don’t want to overwhelm you 
 <h3>1. JavaScript Calculator</h3>
 We will use simple HTML, CSS, and make all the components work using basic JavaScript functions. To display buttons and numbers, we will use HTML, and add some beautification to them using CSS. To make the buttons perform the respective functions we will use JavaScript. The main function is eval(), which is a global JS function that solves JS codes. The display() function will display the selected number on the calculator screen. Note that the program will work only for mouse events. Here is the complete code:
 
-<h4>HTML</h4>
+<details>
+  <summary>HTML</summary>
 
 ```[html]
 <div class="calculator">
@@ -61,7 +62,12 @@ We will use simple HTML, CSS, and make all the components work using basic JavaS
 </div>
 ```
 
+</details>
+
 <h4>CSS</h4>
+
+<details>
+  <summary>CSS</summary>
 
 ```css
 html {
@@ -148,7 +154,12 @@ button:hover {
 }
 ```
 
+</details>
+
 <h4>JavaScript</h4>
+
+<details>
+  <summary>JavaScript</summary>
 
 ```js
 const calculator = {
@@ -264,6 +275,8 @@ keys.addEventListener('click', event => {
 });
 ```
 
+</details>
+
 <h3><a href="https://www.sololearn.com/en/compiler-playground/WyyBylG1NvdU/#js">2. Hangman Game</a></h3>
 
 Hangman is a well-known game, and one of our simple JS projects. You can develop it in a jiffy using JavaScript, HTML, and CSS. Note that the main functionality is defined using JS. HTML is for display, and CSS does the job of beautifying the contents. 
@@ -271,6 +284,9 @@ Hangman is a well-known game, and one of our simple JS projects. You can develop
 Many methods are defined in the JS code, so it may seem a bit complicated, but you will realize it is simple once you read the code thoroughly. You can also run the code and see the execution line by line.
 
 <h4>HTML</h4>
+
+<details>
+  <summary>HTML</summary>
 
 ```[html]
 <!DOCTYPE html>
@@ -318,7 +334,12 @@ Many methods are defined in the JS code, so it may seem a bit complicated, but y
 </html>
 ```
 
+</details>
+
 <h4>CSS</h4>
+
+<details>
+  <summary>CSS</summary>
 
 ```
 body {
