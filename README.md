@@ -17,15 +17,26 @@ One of the most popular scripting languages, JavaScript is used in all the web a
 JS is the heart of any web application. Good knowledge of JavaScript can get you a range of challenging and interesting career options like developing mobile and desktop apps, building dynamic websites from scratch, UI/UX designer, or even a full stack developer. If you know the basics of JavaScript, projects are your next step to add stars to your resume. If you don’t have any prior programming experience, you can take up basic JavaScript courses and then come back to these projects. If you follow a bit of HTML & CSS, you will understand most of the Javascript projects with the source code mentioned below.
 
 <h3>Best JavaScript Projects for Beginners</h3>
-There is a lot you can do with JavaScript, but we don’t want to overwhelm you with everything yet. We have listed the top JavaScript projects that can add value to your resume as well as a career:
+There is a lot you can do with JavaScript, but we don’t want to overwhelm you with 
+everything yet. We have listed the top JavaScript projects that can add value to 
+your resume as well as a career:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>1. JavaScript Calculator</h3>
-We will use simple HTML, CSS, and make all the components work using basic JavaScript functions. To display buttons and numbers, we will use HTML, and add some beautification to them using CSS. To make the buttons perform the respective functions we will use JavaScript. The main function is eval(), which is a global JS function that solves JS codes. The display() function will display the selected number on the calculator screen. Note that the program will work only for mouse events. Here is the complete code:
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+We will use simple HTML, CSS, and make all the components work using basic JavaScript 
+functions. To display buttons and numbers, we will use HTML, and add some beautification 
+to them using CSS. To make the buttons perform the respective functions we will use 
+JavaScript. 
+
+The main function is eval(), which is a global JS function that solves JS codes. The 
+display() function will display the selected number on the calculator screen. Note 
+that the program will work only for mouse events. Here is the complete code:
 
 <h4>HTML: Calculator</h4>
 
 <details>
-  <summary>HTML</summary>
+  <summary>HTML: Calculator</summary>
 
 ```[html]
 <div class="calculator">
@@ -69,7 +80,7 @@ We will use simple HTML, CSS, and make all the components work using basic JavaS
 <h4>CSS: Calculator</h4>
 
 <details>
-  <summary>CSS</summary>
+  <summary>CSS: Calculator</summary>
 
 ```css
 html {
@@ -161,7 +172,7 @@ button:hover {
 <h4>JavaScript: Calculator</h4>
 
 <details>
-  <summary>JavaScript</summary>
+  <summary>JavaScript: Calculator</summary>
 
 ```js
 const calculator = {
@@ -278,8 +289,9 @@ keys.addEventListener('click', event => {
 ```
 
 </details>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3><a href="https://www.sololearn.com/en/compiler-playground/WyyBylG1NvdU/#js">2. Hangman Game</a></h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Hangman is a well-known game, and one of our simple JS projects. You can develop it in a jiffy using JavaScript, HTML, and CSS. Note that the main functionality is defined using JS. HTML is for display, and CSS does the job of beautifying the contents. 
 
@@ -288,7 +300,7 @@ Many methods are defined in the JS code, so it may seem a bit complicated, but y
 <h4>HTML: Hangman</h4>
 
 <details>
-  <summary>HTML</summary>
+  <summary>HTML: Hangman</summary>
 
 ```[html]
 <!DOCTYPE html>
@@ -809,7 +821,7 @@ body {
 <h4>JavaScript: Hangman</h4>
 
 <details>
-  <summary>JavaScript</summary>
+  <summary>JavaScript: Hangman</summary>
 
 ```js
 /*
@@ -1043,8 +1055,16 @@ function gId(a) {
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>3. Tic Tac Toe Game</h3>
-JavaScript makes it easy to develop a Tic-Tac-Toe game yourself. You can look at the entire code here, and it explains how to build a 3x3 tic-tac-toe step by step. Then, you can later expand to NxN for your own practice and knowledge. The HTML and CSS for the project are quite simple. The author first starts with pseudocode and then goes on to explain each function individually.
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+JavaScript makes it easy to develop a Tic-Tac-Toe game yourself. You can look at 
+the entire code here, and it explains how to build a 3x3 tic-tac-toe step by step. 
+Then, you can later expand to NxN for your own practice and knowledge. The HTML 
+and CSS for the project are quite simple. The author first starts with pseudocode 
+and then goes on to explain each function individually.
+
+<h4>HTML: Tic-Tac-Toe</h4>
 
 <details>
   <summary>HTML: Tic-Tac-Toe</summary>
@@ -1087,7 +1107,7 @@ JavaScript makes it easy to develop a Tic-Tac-Toe game yourself. You can look at
 <h4>CSS: Tic-Tac-Toe</h4>
 
 <details>
-  <summary>CSS</summary>
+  <summary>CSS: Tic-Tac-Toe</summary>
   
 ```css
 body {
@@ -1119,7 +1139,7 @@ section {
 <h4>JavaScript: Tic-Tac-Toe</h4>
 
 <details>
-  <summary>JavaScript</summary>
+  <summary>JavaScript: Tic-Tac-Toe</summary>
 
 ```js
 const statusDisplay = document.querySelector('.game--status');
@@ -1223,7 +1243,7 @@ Check out this Youtube video that explains the weather app code and functionalit
 <h4>HTML: Weather App</h4>
 
 <details>
-  <summary>HTML</summary>
+  <summary>HTML: Weather App</summary>
 
 ```[html]
 
@@ -1235,7 +1255,7 @@ Check out this Youtube video that explains the weather app code and functionalit
 <h4>CSS: Weather App</h4>
 
 <details>
-  <summary>CSS</summary>
+  <summary>CSS: Weather App</summary>
 
 ```css
 
@@ -1246,7 +1266,7 @@ Check out this Youtube video that explains the weather app code and functionalit
 <h4>JavaScript: Weather App</h4>
 
 <details>
-  <summary>JavaScript</summary>
+  <summary>JavaScript: Weather App</summary>
 
 ```js
 
