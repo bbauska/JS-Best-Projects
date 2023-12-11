@@ -22,6 +22,8 @@ There is a lot you can do with JavaScript, but we don’t want to overwhelm you 
 <h3>1. JavaScript Calculator</h3>
 We will use simple HTML, CSS, and make all the components work using basic JavaScript functions. To display buttons and numbers, we will use HTML, and add some beautification to them using CSS. To make the buttons perform the respective functions we will use JavaScript. The main function is eval(), which is a global JS function that solves JS codes. The display() function will display the selected number on the calculator screen. Note that the program will work only for mouse events. Here is the complete code:
 
+<h4>HTML: Calculator</h4>
+
 <details>
   <summary>HTML</summary>
 
@@ -64,7 +66,7 @@ We will use simple HTML, CSS, and make all the components work using basic JavaS
 
 </details>
 
-<h4>CSS</h4>
+<h4>CSS: Calculator</h4>
 
 <details>
   <summary>CSS</summary>
@@ -156,7 +158,7 @@ button:hover {
 
 </details>
 
-<h4>JavaScript</h4>
+<h4>JavaScript: Calculator</h4>
 
 <details>
   <summary>JavaScript</summary>
@@ -283,7 +285,7 @@ Hangman is a well-known game, and one of our simple JS projects. You can develop
 
 Many methods are defined in the JS code, so it may seem a bit complicated, but you will realize it is simple once you read the code thoroughly. You can also run the code and see the execution line by line.
 
-<h4>HTML</h4>
+<h4>HTML: Hangman</h4>
 
 <details>
   <summary>HTML</summary>
@@ -336,7 +338,7 @@ Many methods are defined in the JS code, so it may seem a bit complicated, but y
 
 </details>
 
-<h4>CSS</h4>
+<h4>CSS: Hangman</h4>
 
 <details>
   <summary>CSS</summary>
@@ -804,30 +806,409 @@ body {
 
 </details>
 
+<h4>JavaScript: Hangman</h4>
 
-<h4>JavaScript</h4>
+<details>
+  <summary>JavaScript</summary>
+
+```js
+/*
+ * > Coded By Thomas Hj
+ * > 31102016
+ * 
+ * > #31
+ */
+
+// Word selection
+// New word = ["Word name", "Hint"]
+var word = [["Hangman", "That game you are playing right now."], ["Thomas Hj", "About the creator of this game."], ["HTML", "Markup language for creating Web pages."], ["CSS", "Wep page styles"], ["PHP", "A very popular server scripting language."], ["JavaScript", "Make web-page dynamic without reload the web page."], ["Java", "Run 15 billion devices.\nA program can be run in Windows, Linux and Mac"], ["SoloLearn", "A company that everyone can code for fun and share."], ["Love", "What is ?\nBaby don't hurt me\nDon't hurt me\nNo more"], ["Document", "A lot of text in the a file."], ["Playground", "There school kids go to."], ["Run", "Usain bolt."], ["Code", "var hw = 'Hello World';"], ["Samsung", "A company create Phone, Tv, Monitor, SDD, Memory chip..."], ["Super Mario", "A very popular game in Nintendo 64 that have red hat."], ["Star", "Super Mario like to get."], ["Clock", "14:12 or 14pm"], ["Binary Clock", "A clock that only use 0 or 1."], ["Sword", "Link from Zelda have on the hand."], ["Girl", "Not boy but ?"], ["Boy", "Not girl but ?"], ["Female", "Other name as girl."], ["Male", "Other name as boy."], ["Smartphone", "Something you've always on you."]]
+
+// Game keyboard
+var tastatur = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+// Game memory
+var select = 0
+var wordLeft = []
+var fail = 0
+
+// Web-page onload
+window.onload = function() {
+    gId("moveKeybord").addEventListener('touchmove', function(e) {
+        wH = window.innerHeight
+        tY = e.touches[0].clientY
+        eL = gId("tastatur")
+        resY = wH - tY - eL.offsetHeight
+        if(resY < 0) {
+            resY = 0
+        } else if(resY > wH / 2) {
+            resY = wH / 2
+        }
+        eL.style.bottom = resY + "px"
+    }, false)
+    createTastur()
+}
+
+// Start game
+function startGame() {
+    gId("home").className = "h"
+    gId("result").className = "h"
+    newGame()
+}
+
+// New game
+function newGame() {
+    clearTastatur()
+    clearPlayer()
+    createWord()
+}
+
+// Clear keyboard
+function clearTastatur() {
+    var e = document.getElementsByClassName("b")
+    for(a = 0; a < e.length; a++) {
+        e[a].setAttribute("data", "")
+    }
+}
+
+// Clear player
+function clearPlayer() {
+    fail = 0
+    wordLeft = []
+    gId("g0").setAttribute("data", "false")
+    gId("g1").setAttribute("data", "false")
+    gId("g2").setAttribute("data", "false")
+    gId("g3").setAttribute("data", "false")
+    gId("g4").setAttribute("data", "false")
+    gId("g5").setAttribute("data", "false")
+    gId("g5").setAttribute("r", "false")
+    gId("g5").setAttribute("l", "false")
+    gId("g6").setAttribute("data", "false")
+    gId("g6").setAttribute("l", "false")
+    gId("g6").setAttribute("r", "false")
+    gId("hintButton").setAttribute("data", "false")
+    gId("hint").style.display = "none"
+}
+
+// Get new word
+function createWord() {
+    var d = gId("letter")
+    d.innerHTML = ""
+    select = Math.floor(Math.random() * word.length)
+    for(a = 0; a < word[select][0].length; a++) {
+        var x = word[select][0][a].toUpperCase()
+        var b = document.createElement("span")
+        b.className = "l" + (x == " " ? " ls" : "")
+        b.innerHTML = "&nbsp"
+        b.id = "l" + a;
+        d.appendChild(b)
+        
+        if(x != " ") {
+            if(wordLeft.indexOf(x) == -1) {
+                wordLeft.push(x)
+            }
+        }
+    }
+}
+
+// Create keyboard
+function createTastur() {
+    var tas = gId("keybord")
+    tas.innerHTML = ""
+    for(a = 0; a < tastatur.length; a++) {
+        var b = document.createElement("span")
+        b.className = "b"
+        b.innerText = tastatur[a]
+        b.setAttribute("data", "")
+        b.onclick = function() {
+            bTas(this)
+        }
+        tas.appendChild(b)
+    }
+}
+
+// Game check, If show next error / game end
+function bTas(a) {
+    if(a.getAttribute("data") == "") {
+        var x = isExist(a.innerText)
+        a.setAttribute("data", x)
+        if(x) {
+            if(wordLeft.length == 0) {
+                gameEnd(true)
+            }
+        } else {
+            showNextFail()
+        }
+    }
+}
+
+// If letter "X" exist
+function isExist(e) {
+    e = e.toUpperCase()
+    var x = wordLeft.indexOf(e)
+    if(x != -1) {
+        wordLeft.splice(x, 1)
+        typeWord(e)
+        return true
+    }
+    return false
+}
+
+// Show next fail drawing
+function showNextFail() {
+    fail++
+    switch(fail) {
+        case 1:
+            gId("g0").setAttribute("data", "true")
+            break;
+        
+        case 2:
+            gId("g1").setAttribute("data", "true")
+            break;
+        
+        case 3:
+            gId("g2").setAttribute("data", "true")
+            break;
+        
+        case 4:
+            gId("g3").setAttribute("data", "true")
+            gId("hintButton").setAttribute("data", "true")
+            break;
+        
+        case 5:
+            gId("g4").setAttribute("data", "true")
+            break;
+        
+        case 6:
+            gId("g5").setAttribute("data", "true")
+            break;
+        
+        case 7:
+            gId("g5").setAttribute("l", "true")
+            break;
+        
+        case 8:
+            gId("g5").setAttribute("r", "true")
+            break;
+        
+        case 9:
+            gId("g6").setAttribute("data", "true")
+            gId("g6").setAttribute("l", "true")
+            break;
+        
+        case 10:
+            gId("g6").setAttribute("r", "true")
+            gameEnd(false)
+            break;
+    }
+}
+
+function typeWord(e) {
+    for(a = 0; a < word[select][0].length; a++) {
+        if(word[select][0][a].toUpperCase() == e) {
+            gId("l" + a).innerText = e
+        }
+    }
+}
+
+// Game result
+function gameEnd(e) {
+    var d = gId("result")
+    d.setAttribute("data", e)
+    if(e) {
+        gId("rT").innerText = "You Win!"
+        gId("rM").innerHTML = "Congratulations, you found the word!<br/><br/>Good Job!"
+    } else {
+        gId("rT").innerText = "You Lose!"
+        gId("rM").innerHTML = "The word was <br/><br/>\"" + word[select][0].toUpperCase() + "\"<br/><br/>Better luck next time."
+    }
+    d.className = ""
+}
+
+// Show hint
+function hint() {
+    gId("hintText").innerText = word[select][1]
+    gId("hint").style.display = "block"
+}
+
+// Exit hint
+function hintExit() {
+    gId("hint").style.display = "none"
+}
+
+// Get HTML ID element by name
+function gId(a) {
+    return document.getElementById(a)
+}
+```
+
+</details>
 
 <h3>3. Tic Tac Toe Game</h3>
 JavaScript makes it easy to develop a Tic-Tac-Toe game yourself. You can look at the entire code here, and it explains how to build a 3x3 tic-tac-toe step by step. Then, you can later expand to NxN for your own practice and knowledge. The HTML and CSS for the project are quite simple. The author first starts with pseudocode and then goes on to explain each function individually.
 
 <details>
-  <summary>HTML</summary>
+  <summary>HTML: Tic-Tac-Toe</summary>
   
 ```[html]
-
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <h1 class="game--title">Tic Tac Toe</h1>
+        <div class="game--container">
+            <div data-cell-index="0" class="cell"></div>
+            <div data-cell-index="1" class="cell"></div>
+            <div data-cell-index="2" class="cell"></div>
+            <div data-cell-index="3" class="cell"></div>
+            <div data-cell-index="4" class="cell"></div>
+            <div data-cell-index="5" class="cell"></div>
+            <div data-cell-index="6" class="cell"></div>
+            <div data-cell-index="7" class="cell"></div>
+            <div data-cell-index="8" class="cell"></div>
+        </div>
+        <h2 class="game--status"></h2>
+        <button class="game--restart">Restart Game</button>
+    </section>
+<script src="script.js"></script>
+</body>
+</html>
 ```
 
 </details>
 
-<h4>CSS</h4>
+<h4>CSS: Tic-Tac-Toe</h4>
+
+<details>
+  <summary>CSS</summary>
+  
 ```css
+body {
+    font-family: "Arial", sans-serif;
+}
+section {
+    text-align: center;
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+}
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+}
 ```
 
 </details>
 
-<h4>JavaScript</h4>
+<h4>JavaScript: Tic-Tac-Toe</h4>
+
+<details>
+  <summary>JavaScript</summary>
 
 ```js
+const statusDisplay = document.querySelector('.game--status');
+
+let gameActive = true;
+let currentPlayer = "X";
+let gameState = ["", "", "", "", "", "", "", "", ""];
+
+const winningMessage = () => `Player ${currentPlayer} has won!`;
+const drawMessage = () => `Game ended in a draw!`;
+const currentPlayerTurn = () => `It's ${currentPlayer}'s turn`;
+
+statusDisplay.innerHTML = currentPlayerTurn();
+
+const winningConditions = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+];
+
+function handleCellPlayed(clickedCell, clickedCellIndex) {
+    gameState[clickedCellIndex] = currentPlayer;
+    clickedCell.innerHTML = currentPlayer;
+}
+
+function handlePlayerChange() {
+    currentPlayer = currentPlayer === "X" ? "O" : "X";
+    statusDisplay.innerHTML = currentPlayerTurn();
+}
+
+function handleResultValidation() {
+    let roundWon = false;
+    for (let i = 0; i <= 7; i++) {
+        const winCondition = winningConditions[i];
+        let a = gameState[winCondition[0]];
+        let b = gameState[winCondition[1]];
+        let c = gameState[winCondition[2]];
+        if (a === '' || b === '' || c === '') {
+            continue;
+        }
+        if (a === b && b === c) {
+            roundWon = true;
+            break
+        }
+    }
+
+    if (roundWon) {
+        statusDisplay.innerHTML = winningMessage();
+        gameActive = false;
+        return;
+    }
+
+    let roundDraw = !gameState.includes("");
+    if (roundDraw) {
+        statusDisplay.innerHTML = drawMessage();
+        gameActive = false;
+        return;
+    }
+
+    handlePlayerChange();
+}
+
+function handleCellClick(clickedCellEvent) {
+    const clickedCell = clickedCellEvent.target;
+    const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+
+    if (gameState[clickedCellIndex] !== "" || !gameActive) {
+        return;
+    }
+
+    handleCellPlayed(clickedCell, clickedCellIndex);
+    handleResultValidation();
+}
+
+function handleRestartGame() {
+    gameActive = true;
+    currentPlayer = "X";
+    gameState = ["", "", "", "", "", "", "", "", ""];
+    statusDisplay.innerHTML = currentPlayerTurn();
+    document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
+}
+
+document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
+document.querySelector('.game--restart').addEventListener('click', handleRestartGame);
 ```
 
 </details>
@@ -839,17 +1220,51 @@ Note that most weather apps use an API that gets the weather data. We will use t
 
 Check out this Youtube video that explains the weather app code and functionality in detail. There are three files, as usual: index.html, main.js, and main.css. Although you can put all the code in a single file (HTML), it is more convenient to maintain separate files. 
 
-<h4>HTML</h4>
-<h4>CSS</h4>
-<h4>JavaScript</h4>
+<h4>HTML: Weather App</h4>
+
+<details>
+  <summary>HTML</summary>
+
+```[html]
+
+```
+
+</details>
+
+
+<h4>CSS: Weather App</h4>
+
+<details>
+  <summary>CSS</summary>
+
+```css
+
+```
+
+</details>
+
+<h4>JavaScript: Weather App</h4>
+
+<details>
+  <summary>JavaScript</summary>
+
+```js
+
+```
+
+</details>
 
 <h3>5. Music Events</h3>
 Here, we’ll introduce you to event listeners that will act on keyboard events. For example, an event will take place if the ‘S’ key is pressed. Each one will have a different code and action. 
 
 Apart from event listeners, we will also learn how to add and play audio files. Note that we have added very basic CSS, as the focus here is on JavaScript. You will have to import your own sounds and background image for the program to work fully.
-<h4>HTML</h4>
 
-```
+<h4>HTML: Music</h4>
+
+<details>
+  <summary>HTML</summary>
+
+```[html]
 <html>
 <head>
  <meta charset="UTF-8">
@@ -941,8 +1356,29 @@ html {
 </html>
 ```
 
-<h4>CSS</h4>
-<h4>JavaScript</h4>
+</details>
+
+<h4>CSS: Music App</h4>
+
+<details>
+  <summary>CSS</summary>
+
+```css
+
+```
+
+</details>
+
+<h4>JavaScript: Music App</h4>
+
+<details>
+  <summary>JavaScript</summary>
+
+```js
+
+```
+
+</details>
 
 
 <h3>6. Form Validation</h3>
@@ -952,7 +1388,12 @@ The project below involves simple form validation. Of course, the project will n
 
 Here is the complete code of a simple form with basic validations:
 
-```
+<h4>HTML: Form Validation</h4>
+
+<details>
+  <summary>HTML</summary>
+
+```[html]
 <html>
   <head>
      <title>Form Validation</title>
@@ -1032,9 +1473,11 @@ Here is the complete code of a simple form with basic validations:
 </html>
 ```
 
-<h4>HTML</h4>
-<h4>CSS</h4>
-<h4>JavaScript</h4>
+</details>
+
+<h4>CSS: Form Validation</h4>
+
+<h4>JavaScript: Form Validation</h4>
 
 
 <h3>7. Photo Details Display</h3>
@@ -1042,7 +1485,12 @@ Here, we will display some images on a web page. Once the user hovers over the i
 
 Again, we have used basic HTML and CSS along with JS. The latter carries out most of the work. You will learn how mouse hover (over and out) events work through this project.
 
-```
+<h4>HTML: Photo Details Display</h4>
+
+<details>
+  <summary>HTML: Photo</summary>
+
+```[html]
 <!DOCTYPE html>
 <html>
  <head>
@@ -1088,12 +1536,31 @@ Again, we have used basic HTML and CSS along with JS. The latter carries out mos
 </html>
 ```
 
+</details>
+
 To make this project more complex, try this slideshow project from W3Schools. You can change the onClick events to onmousehover and onmouseout events, in which case, the images will change once the user hovers over the images.
 
-<h4>HTML</h4>
-<h4>CSS</h4>
-<h4>JavaScript</h4>
+<h4>CSS: Photo App</h4>
 
+<details>
+  <summary>CSS</summary>
+
+```css
+
+```
+
+</details>
+
+<h4>JavaScript: Photo App</h4>
+
+<details>
+  <summary>JavaScript</summary>
+
+```js
+
+```
+
+</details>
 
 <h3>8. Build an Interactive Landing Page</h3>
 This project involves building a dynamic landing page that stores your name and text written in local storage, and shows you an appropriate image and greeting message based on the day's time. This YouTube video will help you learn about this project’s JS components.
