@@ -4,7 +4,22 @@
 
 https://hackr.io/blog/javascript-projects
 
-<h2>10 Best Javascript Projects to Build your Skills [Javascript Examples]</h2>
+<h2>13+ Best Javascript Projects to Build your Skills [Javascript Examples]</h2>
+<blockquote>
+  <h3><a href="#ch1">1. Calculator</a></h3>
+  <h3><a href="#ch2">2. Hangman Game</a></h3>
+  <h3><a href="#ch3">3. Tic-Tac-Toe Game</a></h3>
+  <h3><a href="#ch3b">3b. Again, Tic-Tac-Toe Game</a></h3>
+  <h3><a href="#ch4">4. Weather App</a></h3>
+  <h3><a href="#ch5">5. Music Events</a></h3>
+  <h3><a href="#ch5b">5b. Drums</a></h3>
+  <h3><a href="#ch6">6. Form Validation</a></h3>
+  <h3><a href="#ch7">7. Photo Details Display</a></h3>
+  <h3><a href="#ch8">8. Build an Interactive Landing Page</a></h3>
+  <h3><a href="#ch9">9. Single Page Application</a></h3>
+  <h3><a href="#ch10">10. To-Do List</a></h3>
+  <h3><a href="#ch11">11. JS Rock, Paper, Scissors Game</a></h3>
+</blockquote>
 
 <h3>Introduction</h3>
 One of the most popular scripting languages, JavaScript is used in all the web applications for validation, 
@@ -29,12 +44,11 @@ can take up basic JavaScript courses and then come back to these projects. If yo
 & CSS, you will understand most of the Javascript projects with the source code mentioned below.
 
 <h3>Best JavaScript Projects for Beginners</h3>
-There is a lot you can do with JavaScript, but we don’t want to overwhelm you with 
-everything yet. We have listed the top JavaScript projects that can add value to 
-your resume as well as a career:
+<p>There is a lot you can do with JavaScript, but we don’t want to overwhelm you with everything yet. We 
+have listed the top JavaScript projects that can add value to your resume as well as a career:</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>1. JavaScript Calculator</h3>
+<h3 id="ch1">1. JavaScript Calculator</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 We will use simple HTML, CSS, and make all the components work using basic JavaScript 
 functions. To display buttons and numbers, we will use HTML, and add some beautification 
@@ -308,7 +322,7 @@ keys.addEventListener('click', event => {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>2. <a href="https://www.sololearn.com/en/compiler-playground/WyyBylG1NvdU/#js">Hangman Game</a></h3>
+<h3 id="ch2">2. <a href="https://www.sololearn.com/en/compiler-playground/WyyBylG1NvdU/#js">Hangman Game</a></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Hangman is a well-known game, and one of our simple JS projects. You can develop it in a jiffy 
@@ -1081,7 +1095,7 @@ function gId(a) {
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>3. Tic Tac Toe Game</h3>
+<h3 id="ch3">3. Tic Tac Toe Game</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 JavaScript makes it easy to develop a Tic-Tac-Toe game yourself. You can look at the entire code 
 here, and it explains how to build a 3x3 tic-tac-toe step by step. Then, you can later expand to 
@@ -1261,7 +1275,7 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>3b. Another Tic-Tac-Toe</h3>
+<h3 id="ch3b">3b. Another Tic-Tac-Toe</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML: 2nd Tic-Tac-Toe</summary>
@@ -1468,7 +1482,7 @@ resetButton.addEventListener('click', resetGame, false);
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>4. Weather App</h3>
+<h3 id="ch4">4. Weather App</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Weather apps are also popular JavaScript projects. Once you change the location name in this project, 
 the weather display changes immediately without a page refresh. The UI is also quite sleek. 
@@ -1691,7 +1705,7 @@ function dateBuilder (d) {
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>5. Music Events</h3>
+<h3 id="ch5">5. Music Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here, we’ll introduce you to event listeners that will act on keyboard events. For example, an event 
 will take place if the ‘S’ key is pressed. Each one will have a different code and action. 
@@ -1828,7 +1842,7 @@ html {
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>6. Form Validation</h3>
+<h3 id="ch6">6. Form Validation</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Form validation is a useful aspect and used by many websites for client-side validation of user information, 
 such as card and address details. For example, if there is a mandatory input field name, the user may type 
@@ -1935,7 +1949,7 @@ Here is the complete code of a simple form with basic validations:
 <h4>JavaScript: Form Validation</h4>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>7. Photo Details Display</h3>
+<h3 id="ch7">7. Photo Details Display</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here, we will display some images on a web page. Once the user hovers over the images, more details 
 will appear. You can download images from anywhere or use the ones you already have. 
@@ -2031,7 +2045,7 @@ the user hovers over the images.
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>8. Build an Interactive Landing Page</h3>
+<h3 id="ch8">8. Build an Interactive Landing Page</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This project involves building a dynamic landing page that stores your name and text written in local 
 storage, and shows you an appropriate image and greeting message based on the day's time. This YouTube 
@@ -2063,7 +2077,7 @@ https://www.youtube.com/watch?v=fSTQzlprGLI
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>9. Single Page Application</h3>
+<h3 id="ch9">9. Single Page Application</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here, the page won’t reload upon navigating the side links, but the content will change. Again, we will 
 use eventListeners to change the view from one link to another. Check out the code and explanation on 
@@ -2094,7 +2108,7 @@ https://www.youtube.com/watch?v=6BozpmSjk-Y
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>10. JavaScript To-Do List</h3>
+<h3 id="ch10">10. JavaScript To-Do List</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this JavaScript project, you'll build a To-Do List app, a practical and highly useful application 
 that is a staple in many people's daily productivity routines.
@@ -2124,7 +2138,7 @@ how JavaScript can be used to enhance the interactivity and responsiveness of we
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3>11. JavaScript Rock, Paper, Scissors Game</h3>
+<h3 id="ch11">11. JavaScript Rock, Paper, Scissors Game</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 In this JavaScript project, you'll create the timeless classic Rock Paper Scissors game. It really needs no introduction, but this is an engaging and interactive application that brings a classic game to your web browser.
 
