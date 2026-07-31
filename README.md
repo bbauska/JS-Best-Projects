@@ -52,7 +52,7 @@ that the program will work only for mouse events. Here is the complete code:
 <details>
   <summary>HTML: Calculator</summary>
 
-```[html]
+```html
 <div class="calculator">
 
   <input type="text" class="calculator-screen" value="" disabled />
@@ -94,7 +94,7 @@ that the program will work only for mouse events. Here is the complete code:
 <details>
   <summary>CSS: Calculator</summary>
 
-```[css]
+```css
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -192,7 +192,7 @@ button:hover {
 <details>
   <summary>JavaScript: Calculator</summary>
 
-```[js]
+```javascript
 const calculator = {
   displayValue: '0',
   firstOperand: null,
@@ -326,7 +326,7 @@ line by line.
 <details>
   <summary>HTML: Hangman</summary>
 
-```[html]
+```html
 <!DOCTYPE html>
 <html t="0x31" i="YA-9517" v="1.60">
   <head>
@@ -380,7 +380,7 @@ line by line.
 <details>
   <summary>CSS</summary>
 
-```[css]
+```css
 body {
     background-color: #eee;
     margin: 0;
@@ -849,7 +849,7 @@ body {
 <details>
   <summary>JavaScript: Hangman</summary>
 
-```[js]
+```javascript
 /*
  * > Coded By Thomas Hj
  * > 31102016
@@ -1094,7 +1094,7 @@ author first starts with pseudocode and then goes on to explain each function in
 <details>
   <summary>HTML: Tic-Tac-Toe</summary>
   
-```[html]
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -1136,7 +1136,7 @@ author first starts with pseudocode and then goes on to explain each function in
 <details>
   <summary>CSS: Tic-Tac-Toe</summary>
   
-```[css]
+```css
 body {
     font-family: "Arial", sans-serif;
 }
@@ -1170,7 +1170,7 @@ section {
 <details>
   <summary>JavaScript: Tic-Tac-Toe</summary>
 
-```[js]
+```javascript
 const statusDisplay = document.querySelector('.game--status');
 
 let gameActive = true;
@@ -1266,7 +1266,7 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
 <details>
   <summary>HTML: 2nd Tic-Tac-Toe</summary>
 
-```[html]
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1305,7 +1305,7 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
 <details>
   <summary>CSS: 2nd Tic-Tac-Toe</summary>
 
-```[css]
+```css
 body {
   font-family: 'Arial', sans-serif;
   display: flex;
@@ -1370,7 +1370,7 @@ body {
 <details>
   <summary>JavaScript: 2nd Tic-Tac-Toe</summary>
 
-```[js]
+```javascript
 let currentPlayer = 'X'; // Player X always starts
 let gameBoard = ['', '', '', '', '', '', '', '', '']; // 3x3 game board
 let gameActive = true;
@@ -1486,7 +1486,7 @@ a single file (HTML), it is more convenient to maintain separate files.
 <details>
   <summary>HTML: Weather App</summary>
 
-```[html]
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1527,7 +1527,7 @@ a single file (HTML), it is more convenient to maintain separate files.
 <details>
   <summary>CSS: Weather App</summary>
 
-```[css]
+```css
 * {
   margin: 0;
   padding: 0;
@@ -1634,7 +1634,7 @@ main {
 <details>
   <summary>JavaScript: Weather App</summary>
 
-```[js]
+```javascript
 const api = {
   key: "afaf9f8d48cff6cafd32e23220bcfdbf",
   base: "https://api.openweathermap.org/data/2.5/"
@@ -1706,7 +1706,7 @@ background image for the program to work fully.
 <details>
   <summary>HTML</summary>
 
-```[html]
+```html
 <html>
 <head>
  <meta charset="UTF-8">
@@ -1807,7 +1807,7 @@ html {
 <details>
   <summary>CSS</summary>
 
-```[css]
+```css
 
 ```
 
@@ -1820,7 +1820,7 @@ html {
 <details>
   <summary>JavaScript</summary>
 
-```[js]
+```javascript
 
 ```
 
@@ -1845,7 +1845,7 @@ Here is the complete code of a simple form with basic validations:
 <details>
   <summary>HTML</summary>
 
-```[html]
+```html
 <html>
   <head>
      <title>Form Validation</title>
@@ -1949,7 +1949,7 @@ will learn how mouse hover (over and out) events work through this project.
 <details>
   <summary>HTML: Photo</summary>
 
-```[html]
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -2012,7 +2012,7 @@ the user hovers over the images.
 <details>
   <summary>CSS</summary>
 
-```[css]
+```css
 
 ```
 
@@ -2023,7 +2023,7 @@ the user hovers over the images.
 <details>
   <summary>JavaScript</summary>
 
-```[js]
+```javascript
 
 ```
 
