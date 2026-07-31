@@ -2329,12 +2329,111 @@ It's also a solid portfolio piece, particularly if you want to highlight your we
 <details>
   <summary>HTML</summary>
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="rps-game">
+      <h1>Rock-Paper-Scissors</h1>
+      <div id="choices">
+          <button id="rock">Rock</button>
+          <button id="paper">Paper</button>
+          <button id="scissors">Scissors</button>
+      </div>
+      <div id="result">
+          <!-- Result will be displayed here -->
+      </div>
+      <div id="game-info">
+          <div id="round">Round: 1 of 5</div>
+          <div id="scoreboard">
+              <div id="player-score">Player Score: 0</div>
+              <div id="computer-score">Computer Score: 0</div>
+          </div>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
+
+```
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #56AB2F, #A8E063);
+  color: #333;
+}
+
+#rps-game {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the game content */
+}
+
+#choices button {
+  padding: 15px 25px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+#choices button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#scoreboard {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#player-score, #computer-score {
+  margin: 10px;
+}
+
+#game-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#round {
+  font-size: 20px;
+  margin: 10px 0;
+}
+```
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
