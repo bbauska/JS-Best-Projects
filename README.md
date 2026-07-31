@@ -1,10 +1,12 @@
-# JS-Best-Projects
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h1>JS-Best-Projects</h1>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 https://hackr.io/blog/javascript-projects
 
-10 Best Javascript Projects to Build your Skills [Javascript Examples]
+<h2>10 Best Javascript Projects to Build your Skills [Javascript Examples]</h2>
 
-Introduction 
+<h3>Introduction</h3>
 One of the most popular scripting languages, JavaScript is used in all the web applications for validation, 
 rendering dynamic content, interactive graphics and maps, and much more. Along with HTML and CSS, JS has 
 the power to build complete, robust web applications. Because of JS, the user can interact with a web 
@@ -43,7 +45,9 @@ The main function is eval(), which is a global JS function that solves JS codes.
 display() function will display the selected number on the calculator screen. Note 
 that the program will work only for mouse events. Here is the complete code:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Calculator</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>HTML: Calculator</summary>
@@ -83,7 +87,9 @@ that the program will work only for mouse events. Here is the complete code:
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Calculator</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>CSS: Calculator</summary>
@@ -179,7 +185,9 @@ button:hover {
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript: Calculator</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>JavaScript: Calculator</summary>
@@ -300,7 +308,7 @@ keys.addEventListener('click', event => {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h3><a href="https://www.sololearn.com/en/compiler-playground/WyyBylG1NvdU/#js">2. Hangman Game</a></h3>
+<h3>2. <a href="https://www.sololearn.com/en/compiler-playground/WyyBylG1NvdU/#js">Hangman Game</a></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 Hangman is a well-known game, and one of our simple JS projects. You can develop it in a jiffy 
@@ -311,7 +319,9 @@ Many methods are defined in the JS code, so it may seem a bit complicated, but y
 it is simple once you read the code thoroughly. You can also run the code and see the execution 
 line by line.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Hangman</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>HTML: Hangman</summary>
@@ -364,8 +374,9 @@ line by line.
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Hangman</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS</summary>
 
@@ -832,8 +843,9 @@ body {
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript: Hangman</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript: Hangman</summary>
 
@@ -1076,8 +1088,9 @@ here, and it explains how to build a 3x3 tic-tac-toe step by step. Then, you can
 NxN for your own practice and knowledge. The HTML and CSS for the project are quite simple. The 
 author first starts with pseudocode and then goes on to explain each function individually.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Tic-Tac-Toe</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML: Tic-Tac-Toe</summary>
   
@@ -1116,7 +1129,9 @@ author first starts with pseudocode and then goes on to explain each function in
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Tic-Tac-Toe</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>CSS: Tic-Tac-Toe</summary>
@@ -1148,7 +1163,9 @@ section {
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript: Tic-Tac-Toe</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>JavaScript: Tic-Tac-Toe</summary>
@@ -1244,8 +1261,215 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
 ```
 
 </details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>3b. Another Tic-Tac-Toe</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML: 2nd Tic-Tac-Toe</summary>
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="tic-tac-toe-board">
+      <div class="row">
+          <div class="cell" id="cell-1"></div>
+          <div class="cell" id="cell-2"></div>
+          <div class="cell" id="cell-3"></div>
+      </div>
+      <div class="row">
+          <div class="cell" id="cell-4"></div>
+          <div class="cell" id="cell-5"></div>
+          <div class="cell" id="cell-6"></div>
+      </div>
+      <div class="row">
+          <div class="cell" id="cell-7"></div>
+          <div class="cell" id="cell-8"></div>
+          <div class="cell" id="cell-9"></div>
+      </div>
+  </div>
+  <div id="gameMessage" class="game-message"></div>
+  <button id="resetButton">Reset Game</button>  
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+</details>
+
+<details>
+  <summary>CSS: 2nd Tic-Tac-Toe</summary>
+
+```cs
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  color: #333;
+}
+
+#tic-tac-toe-board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+}
+
+.cell {
+  background-color: #fff;
+  border: 2px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+  height: 100px;
+}
+
+.cell:hover {
+  background-color: #e3e3e3;
+}
+
+.game-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+#resetButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+  background-color: #555;
+}
+```
+
+</details>
+
+<details>
+  <summary>JavaScript: 2nd Tic-Tac-Toe</summary>
+
+```js
+let currentPlayer = 'X'; // Player X always starts
+let gameBoard = ['', '', '', '', '', '', '', '', '']; // 3x3 game board
+let gameActive = true;
+
+function handlePlayerTurn(clickedCellIndex) {
+  if (gameBoard[clickedCellIndex] !== '' || !gameActive) {
+      return;
+  }
+  gameBoard[clickedCellIndex] = currentPlayer;
+  checkForWinOrDraw();
+  currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+}
+
+function cellClicked(clickedCellEvent) {
+  const clickedCell = clickedCellEvent.target;
+  const clickedCellIndex = parseInt(clickedCell.id.replace('cell-', '')) - 1;
+  if (gameBoard[clickedCellIndex] !== '' || !gameActive) {
+      return;
+  }
+  handlePlayerTurn(clickedCellIndex);
+  updateUI();
+}
+
+const cells = document.querySelectorAll('.cell');
+
+cells.forEach(cell => {
+  cell.addEventListener('click', cellClicked, false);
+});
+
+function updateUI() {
+  for (let i = 0; i < cells.length; i++) {
+      cells[i].innerText = gameBoard[i];
+  }
+}
+
+function announceWinner(player) {
+  const messageElement = document.getElementById('gameMessage');
+  messageElement.innerText = `Player ${player} Wins!`;
+}
+
+function announceDraw() {
+  const messageElement = document.getElementById('gameMessage');
+  messageElement.innerText = 'Game Draw!';
+}
+
+const winConditions = [
+  [0, 1, 2], // Top row
+  [3, 4, 5], // Middle row
+  [6, 7, 8], // Bottom row
+  [0, 3, 6], // Left column
+  [1, 4, 7], // Middle column
+  [2, 5, 8], // Right column
+  [0, 4, 8], // Left-to-right diagonal
+  [2, 4, 6]  // Right-to-left diagonal
+];
+
+function checkForWinOrDraw() {
+  let roundWon = false;
+
+  for (let i = 0; i < winConditions.length; i++) {
+      const [a, b, c] = winConditions[i];
+      if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
+          roundWon = true;
+          break;
+      }
+  }
+
+  if (roundWon) {
+      announceWinner(currentPlayer);
+      gameActive = false;
+      return;
+  }
+
+  let roundDraw = !gameBoard.includes('');
+  if (roundDraw) {
+      announceDraw();
+      gameActive = false;
+      return;
+  }
+}
+
+function resetGame() {
+  gameBoard = ['', '', '', '', '', '', '', '', ''];
+  gameActive = true;
+  currentPlayer = 'X';
+  cells.forEach(cell => {
+      cell.innerText = '';
+  });
+  document.getElementById('gameMessage').innerText = '';
+}
+
+const resetButton = document.getElementById('resetButton');
+resetButton.addEventListener('click', resetGame, false);
+```
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>4. Weather App</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Weather apps are also popular JavaScript projects. Once you change the location name in this project, 
 the weather display changes immediately without a page refresh. The UI is also quite sleek. 
 
@@ -1256,7 +1480,9 @@ Check out this Youtube video that explains the weather app code and functionalit
 are three files, as usual: index.html, main.js, and main.css. Although you can put all the code in 
 a single file (HTML), it is more convenient to maintain separate files. 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Weather App</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>HTML: Weather App</summary>
@@ -1295,8 +1521,9 @@ a single file (HTML), it is more convenient to maintain separate files.
 
 </details>
 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Weather App</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>CSS: Weather App</summary>
@@ -1401,7 +1628,9 @@ main {
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript: Weather App</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>JavaScript: Weather App</summary>
@@ -1461,7 +1690,9 @@ function dateBuilder (d) {
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>5. Music Events</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here, we’ll introduce you to event listeners that will act on keyboard events. For example, an event 
 will take place if the ‘S’ key is pressed. Each one will have a different code and action. 
 
@@ -1469,7 +1700,9 @@ Apart from event listeners, we will also learn how to add and play audio files. 
 very basic CSS, as the focus here is on JavaScript. You will have to import your own sounds and 
 background image for the program to work fully.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Music</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>HTML</summary>
@@ -1568,7 +1801,9 @@ html {
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Music App</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>CSS</summary>
@@ -1590,8 +1825,9 @@ html {
 
 </details>
 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>6. Form Validation</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Form validation is a useful aspect and used by many websites for client-side validation of user information, 
 such as card and address details. For example, if there is a mandatory input field name, the user may type 
 a number, leave the field blank, or type just one letter. JS can validate this information. 
@@ -1601,7 +1837,9 @@ We have not carried out any extensive styling, only including basic elements in 
 
 Here is the complete code of a simple form with basic validations:
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Form Validation</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>HTML</summary>
@@ -1688,19 +1926,25 @@ Here is the complete code of a simple form with basic validations:
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Form Validation</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>JavaScript: Form Validation</h4>
 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>7. Photo Details Display</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here, we will display some images on a web page. Once the user hovers over the images, more details 
 will appear. You can download images from anywhere or use the ones you already have. 
 
 Again, we have used basic HTML and CSS along with JS. The latter carries out most of the work. You 
 will learn how mouse hover (over and out) events work through this project.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Photo Details Display</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>HTML: Photo</summary>
@@ -1761,7 +2005,9 @@ To make this project more complex, try this slideshow project from W3Schools. Yo
 onClick events to onmousehover and onmouseout events, in which case, the images will change once 
 the user hovers over the images.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Photo App</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>CSS</summary>
@@ -1783,7 +2029,9 @@ the user hovers over the images.
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>8. Build an Interactive Landing Page</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 This project involves building a dynamic landing page that stores your name and text written in local 
 storage, and shows you an appropriate image and greeting message based on the day's time. This YouTube 
 video will help you learn about this project’s JS components.
@@ -1791,18 +2039,27 @@ video will help you learn about this project’s JS components.
 https://www.youtube.com/watch?v=fSTQzlprGLI
 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>9. Single Page Application</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Here, the page won’t reload upon navigating the side links, but the content will change. Again, we will 
 use eventListeners to change the view from one link to another. Check out the code and explanation on 
 this YouTube video.
 
 https://www.youtube.com/watch?v=6BozpmSjk-Y
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
