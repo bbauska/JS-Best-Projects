@@ -2043,10 +2043,24 @@ https://www.youtube.com/watch?v=fSTQzlprGLI
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
+
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
+
+</details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>9. Single Page Application</h3>
@@ -2060,7 +2074,209 @@ https://www.youtube.com/watch?v=6BozpmSjk-Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
+
+</details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
+
+</details>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>10. JavaScript To-Do List</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+In this JavaScript project, you'll build a To-Do List app, a practical and highly useful application 
+that is a staple in many people's daily productivity routines.
+
+This project is not just about creating a functional tool; it’s also a brilliant demonstration of 
+how JavaScript can be used to enhance the interactivity and responsiveness of web pages.
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>JavaScript</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3>11. JavaScript Rock, Paper, Scissors Game</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+In this JavaScript project, you'll create the timeless classic Rock Paper Scissors game. It really needs no introduction, but this is an engaging and interactive application that brings a classic game to your web browser.
+
+But this JavaScript project goes beyond merely replicating a well-known game; it's also a fantastic showcase of JavaScript's power to create dynamic and responsive web experiences.
+
+It's also a solid portfolio piece, particularly if you want to highlight your web development prowess by using core programming principles in a context that's both enjoyable and easy to understand
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>JavaScript</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
+  
+```
+const rockButton = document.getElementById('rock');
+const paperButton = document.getElementById('paper');
+const scissorsButton = document.getElementById('scissors');
+const resultDisplay = document.getElementById('result');
+
+rockButton.addEventListener('click', () => playRound('rock'));
+paperButton.addEventListener('click', () => playRound('paper'));
+scissorsButton.addEventListener('click', () => playRound('scissors'));
+
+let playerScore = 0;
+let computerScore = 0;
+const playerScoreDisplay = document.getElementById('player-score');
+const computerScoreDisplay = document.getElementById('computer-score');
+
+let currentRound = 1;
+const totalRounds = 5; // You can adjust this number based on how long you want the game to be
+const roundDisplay = document.getElementById('round');
+
+function playRound(playerChoice) {
+    if (currentRound <= totalRounds) {
+
+        roundDisplay.textContent = `Round: ${currentRound} of ${totalRounds}`;
+        currentRound++;
+        console.log(currentRound)
+
+        const choices = ['rock', 'paper', 'scissors'];
+        const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+        if (playerChoice === computerChoice) {
+            resultDisplay.textContent = 'It\'s a draw!';
+        } else if (
+            (playerChoice === 'rock' && computerChoice === 'scissors') ||
+            (playerChoice === 'paper' && computerChoice === 'rock') ||
+            (playerChoice === 'scissors' && computerChoice === 'paper')
+        ) {
+            resultDisplay.textContent = 'You win!';
+            playerScore++;
+        } else {
+            resultDisplay.textContent = 'Computer wins!';
+            computerScore++;
+        }
+
+        playerScoreDisplay.textContent = `Player Score: ${playerScore}`;
+        computerScoreDisplay.textContent = `Computer Score: ${computerScore}`;
+
+    }
+    
+    if (currentRound > totalRounds) {
+        concludeGame();
+    }
+}
+
+function concludeGame() {
+    const gameContainer = document.getElementById('rps-game');
+    const choices = document.getElementById('choices');
+    const gameInfo = document.getElementById('game-info');
+    const roundRes = document.getElementById('result');
+    if (choices) {
+        choices.style.display = 'none';
+    }
+
+    if (gameInfo) {
+        gameInfo.style.display = 'none';
+    }
+
+    if (roundRes) {
+        roundRes.style.display = 'none';
+    }
+
+    const gameConclusion = document.createElement('div');
+    gameConclusion.setAttribute('id', 'game-conclusion');
+
+    let finalMessage = '';
+    if (playerScore > computerScore) {
+        finalMessage = 'Congratulations, you won the game!';
+    } else if (playerScore < computerScore) {
+        finalMessage = 'Game over, the computer wins!';
+    } else {
+        finalMessage = 'The game ends in a draw!';
+    }
+
+    gameConclusion.innerHTML = `
+        <h2>Game Over</h2>
+        <p>${finalMessage}</p>
+        <p>Final Score - You: ${playerScore} | Computer: ${computerScore}</p>
+        <button id="restart-btn">Restart Game</button>
+    `;
+
+    gameContainer.appendChild(gameConclusion);
+    document.getElementById('restart-btn').addEventListener('click', restartGame);
+}
+
+function restartGame() {
+    playerScore = 0;
+    computerScore = 0;
+    currentRound = 1;
+
+    playerScoreDisplay.textContent = 'Player Score: 0';
+    computerScoreDisplay.textContent = 'Computer Score: 0';
+    roundDisplay.textContent = `Round: 1 of ${totalRounds}`;
+
+    const choices = document.getElementById('choices');
+    const gameInfo = document.getElementById('game-info');
+    const roundRes = document.getElementById('result');
+    if (choices) {
+        choices.style.display = '';
+    }
+
+    if (gameInfo) {
+        gameInfo.style.display = '';
+    }
+
+    if (roundRes) {
+        roundRes.style.display = '';
+    }
+
+    const gameConclusion = document.getElementById('game-conclusion');
+    if (gameConclusion) {
+        gameConclusion.remove();
+    }
+
+    document.getElementById('choices').style.display = '';
+    resultDisplay.textContent = 'Choose your weapon!';
+}
+```
+
+</details>
