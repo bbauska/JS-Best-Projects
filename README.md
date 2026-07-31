@@ -2029,7 +2029,106 @@ the user hovers over the images.
   <summary>CSS</summary>
 
 ```css
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+header h1 {
+  font-size: 24px;
+  color: #333;
+}
+header p {
+  font-size: 16px;
+  color: #666;
+}
 
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.photo {
+  position: relative;
+}
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.photo .caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+nav button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+nav button:hover {
+  background-color: #eee;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0,0.9);
+  font-family: 'Roboto', sans-serif;
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+#caption {
+  color: #ccc;
+  font-size: 16px;
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  #gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
 ```
 
 </details>
@@ -2040,7 +2139,39 @@ the user hovers over the images.
   <summary>JavaScript</summary>
 
 ```javascript
+function filterGallery(category) {
+  const photos = document.querySelectorAll('.photo');
+  photos.forEach(photo => {
+      const isVisible = category === 'all' || photo.classList.contains(category);
+      photo.style.display = isVisible ? '' : 'none';
+  });
+}
 
+document.querySelectorAll('.photo img').forEach(img => {
+  img.addEventListener('click', function() {
+      const modal = document.getElementById('myModal');
+      const modalImg = document.getElementById('img01');
+      const captionText = document.getElementById('caption');
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+      captionText.innerHTML = this.nextElementSibling.innerHTML;
+  });
+});
+
+const closeButton = document.querySelector('.close');
+closeButton.onclick = function() {
+  const modal = document.getElementById('myModal');
+  modal.style.display = 'none';
+}
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+      const modal = document.getElementById('myModal');
+      if (modal.style.display === 'block') {
+          modal.style.display = 'none';
+      }
+  }
+});
 ```
 
 </details>
