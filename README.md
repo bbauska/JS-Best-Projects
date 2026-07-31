@@ -20,6 +20,7 @@ https://hackr.io/blog/javascript-projects
   <h3><a href="#ch10">10. To-Do List</a></h3>
   <h3><a href="#ch11">11. JS Rock, Paper, Scissors Game</a></h3>
   <h3><a href="#ch12">12. JS Countdown Timer</a></h3>
+  <h3><a href="#ch13">13. Animated Business Card</a></h3>
 </blockquote>
 
 <h3>Introduction</h3>
@@ -2814,4 +2815,95 @@ const interval = setInterval(updateCountdown, 1000);
 ```
 
 </details>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch13">13. Animated Business Card</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Carter - Business Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="businessCard">
+      <img src="alex-carter.jpg" alt="Alex Carter" class="profile-photo">
+      <!-- <a href="https://www.freepik.com/free-photo/young-male-posing-isolated-against-blank-studio-wall_10110817.htm#query=male%20headshot&position=1&from_view=keyword&track=ais&uuid=43edf3b5-1fff-4353-a9d7-bbe75f59e87b">Image by wayhomestudio</a> on Freepik -->
+      <h1>Alex Carter</h1>
+      <p>Junior Web Developer</p>
+      <p>Email: <a href="mailto:alex.carter.dev@example.com">alex.carter.dev@example.com</a></p>
+      <div id="socialLinks">
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/alex-carter-dev" target="_blank">alex-carter-dev</a></p>
+      </div>
+      <div id="bio">
+          <h2>About Me</h2>
+          <p>I recently graduated from MIT with a degree in Computer Science, specializing in web development. I am passionate about building responsive and user-friendly websites and applications.</p>
+      </div>
+  </div>
+</body>
+</html>
+```
+
+```
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#businessCard {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 20px;
+  width: 350px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.profile-photo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+}
+
+a {
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.profile-photo:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+  #businessCard {
+      width: 90%;
+      padding: 10px;
+  }
+}
+```
 
