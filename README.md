@@ -2819,6 +2819,8 @@ const interval = setInterval(updateCountdown, 1000);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch13">13. Animated Business Card</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+[Animated Business Card](https://hackr.io/blog/how-to-create-a-html-animated-business-card)
+
 ```
 <!DOCTYPE html>
 <html lang="en">
