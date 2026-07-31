@@ -1844,6 +1844,18 @@ html {
 </details>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch5b">5b. Drums</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML: Form Validation</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<details>
+  <summary>HTML</summary>
+  
+</details>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6">6. Form Validation</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Form validation is a useful aspect and used by many websites for client-side validation of user information, 
@@ -2449,11 +2461,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch11">11. JavaScript Rock, Paper, Scissors Game</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this JavaScript project, you'll create the timeless classic Rock Paper Scissors game. It really needs no introduction, but this is an engaging and interactive application that brings a classic game to your web browser.
+In this JavaScript project, you'll create the timeless classic Rock Paper Scissors game. It really 
+needs no introduction, but this is an engaging and interactive application that brings a classic 
+game to your web browser.
 
-But this JavaScript project goes beyond merely replicating a well-known game; it's also a fantastic showcase of JavaScript's power to create dynamic and responsive web experiences.
+But this JavaScript project goes beyond merely replicating a well-known game; it's also a fantastic 
+showcase of JavaScript's power to create dynamic and responsive web experiences.
 
-It's also a solid portfolio piece, particularly if you want to highlight your web development prowess by using core programming principles in a context that's both enjoyable and easy to understand
+It's also a solid portfolio piece, particularly if you want to highlight your web development 
+prowess by using core programming principles in a context that's both enjoyable and easy to 
+understand.
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
