@@ -1098,30 +1098,30 @@ author first starts with pseudocode and then goes on to explain each function in
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <h1 class="game--title">Tic Tac Toe</h1>
-        <div class="game--container">
-            <div data-cell-index="0" class="cell"></div>
-            <div data-cell-index="1" class="cell"></div>
-            <div data-cell-index="2" class="cell"></div>
-            <div data-cell-index="3" class="cell"></div>
-            <div data-cell-index="4" class="cell"></div>
-            <div data-cell-index="5" class="cell"></div>
-            <div data-cell-index="6" class="cell"></div>
-            <div data-cell-index="7" class="cell"></div>
-            <div data-cell-index="8" class="cell"></div>
-        </div>
-        <h2 class="game--status"></h2>
-        <button class="game--restart">Restart Game</button>
-    </section>
+  <section>
+    <h1 class="game--title">Tic Tac Toe</h1>
+    <div class="game--container">
+      <div data-cell-index="0" class="cell"></div>
+      <div data-cell-index="1" class="cell"></div>
+      <div data-cell-index="2" class="cell"></div>
+      <div data-cell-index="3" class="cell"></div>
+      <div data-cell-index="4" class="cell"></div>
+      <div data-cell-index="5" class="cell"></div>
+      <div data-cell-index="6" class="cell"></div>
+      <div data-cell-index="7" class="cell"></div>
+      <div data-cell-index="8" class="cell"></div>
+    </div>
+    <h2 class="game--status"></h2>
+    <button class="game--restart">Restart Game</button>
+  </section>
 <script src="script.js"></script>
 </body>
 </html>
@@ -1205,55 +1205,54 @@ function handlePlayerChange() {
 }
 
 function handleResultValidation() {
-    let roundWon = false;
-    for (let i = 0; i &lt;= 7; i++) {
-        const winCondition = winningConditions[i];
-        let a = gameState[winCondition[0]];
-        let b = gameState[winCondition[1]];
-        let c = gameState[winCondition[2]];
-        if (a === '' || b === '' || c === '') {
-            continue;
-        }
-        if (a === b && b === c) {
-            roundWon = true;
-            break
-        }
+  let roundWon = false;
+  for (let i = 0; i &lt;= 7; i++) {
+    const winCondition = winningConditions[i];
+    let a = gameState[winCondition[0]];
+    let b = gameState[winCondition[1]];
+    let c = gameState[winCondition[2]];
+    if (a === '' || b === '' || c === '') {
+      continue;
     }
-
-    if (roundWon) {
-        statusDisplay.innerHTML = winningMessage();
-        gameActive = false;
-        return;
+    if (a === b && b === c) {
+      roundWon = true;
+      break
     }
+  }
 
-    let roundDraw = !gameState.includes("");
-    if (roundDraw) {
-        statusDisplay.innerHTML = drawMessage();
-        gameActive = false;
-        return;
-    }
+  if (roundWon) {
+    statusDisplay.innerHTML = winningMessage();
+    gameActive = false;
+    return;
+  }
 
-    handlePlayerChange();
+  let roundDraw = !gameState.includes("");
+  if (roundDraw) {
+    statusDisplay.innerHTML = drawMessage();
+    gameActive = false;
+    return;
+  }
+  handlePlayerChange();
 }
 
 function handleCellClick(clickedCellEvent) {
-    const clickedCell = clickedCellEvent.target;
-    const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+  const clickedCell = clickedCellEvent.target;
+  const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
 
-    if (gameState[clickedCellIndex] !== "" || !gameActive) {
-        return;
-    }
+  if (gameState[clickedCellIndex] !== "" || !gameActive) {
+    return;
+  }
 
-    handleCellPlayed(clickedCell, clickedCellIndex);
-    handleResultValidation();
+  handleCellPlayed(clickedCell, clickedCellIndex);
+  handleResultValidation();
 }
 
 function handleRestartGame() {
-    gameActive = true;
-    currentPlayer = "X";
-    gameState = ["", "", "", "", "", "", "", "", ""];
-    statusDisplay.innerHTML = currentPlayerTurn();
-    document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
+  gameActive = true;
+  currentPlayer = "X";
+  gameState = ["", "", "", "", "", "", "", "", ""];
+  statusDisplay.innerHTML = currentPlayerTurn();
+  document.querySelectorAll('.cell').forEach(cell => cell.innerHTML = "");
 }
 
 document.querySelectorAll('.cell').forEach(cell => cell.addEventListener('click', handleCellClick));
@@ -1278,21 +1277,21 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
 </head>
 <body>
   <div id="tic-tac-toe-board">
-      <div class="row">
-          <div class="cell" id="cell-1"></div>
-          <div class="cell" id="cell-2"></div>
-          <div class="cell" id="cell-3"></div>
-      </div>
-      <div class="row">
-          <div class="cell" id="cell-4"></div>
-          <div class="cell" id="cell-5"></div>
-          <div class="cell" id="cell-6"></div>
-      </div>
-      <div class="row">
-          <div class="cell" id="cell-7"></div>
-          <div class="cell" id="cell-8"></div>
-          <div class="cell" id="cell-9"></div>
-      </div>
+    <div class="row">
+      <div class="cell" id="cell-1"></div>
+      <div class="cell" id="cell-2"></div>
+      <div class="cell" id="cell-3"></div>
+    </div>
+    <div class="row">
+      <div class="cell" id="cell-4"></div>
+      <div class="cell" id="cell-5"></div>
+      <div class="cell" id="cell-6"></div>
+    </div>
+    <div class="row">
+      <div class="cell" id="cell-7"></div>
+      <div class="cell" id="cell-8"></div>
+      <div class="cell" id="cell-9"></div>
+    </div>
   </div>
   <div id="gameMessage" class="game-message"></div>
   <button id="resetButton">Reset Game</button>  
@@ -1432,24 +1431,24 @@ function checkForWinOrDraw() {
   let roundWon = false;
 
   for (let i = 0; i &lt; winConditions.length; i++) {
-      const [a, b, c] = winConditions[i];
-      if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
-          roundWon = true;
-          break;
-      }
+    const [a, b, c] = winConditions[i];
+    if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
+      roundWon = true;
+      break;
+    }
   }
 
   if (roundWon) {
-      announceWinner(currentPlayer);
-      gameActive = false;
-      return;
+    announceWinner(currentPlayer);
+    gameActive = false;
+    return;
   }
 
   let roundDraw = !gameBoard.includes('');
   if (roundDraw) {
-      announceDraw();
-      gameActive = false;
-      return;
+    announceDraw();
+    gameActive = false;
+    return;
   }
 }
 
@@ -1756,44 +1755,44 @@ background image for the program to work fully.
 </body>
 <script>
 function removeTransition(event) {
- if (event.propertyName !== 'transform') return
- event.target.classList.remove('playing')
+  if (event.propertyName !== 'transform') return
+  event.target.classList.remove('playing')
 }
 function playSound(event) {
- const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`)
- const key = document.querySelector(`div[data-key="${event.keyCode}"]`)
- if (!audio) return
- key.classList.add('playing')
- audio.currentTime = 0
- audio.play()
+  const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`)
+  const key = document.querySelector(`div[data-key="${event.keyCode}"]`)
+  if (!audio) return
+  key.classList.add('playing')
+  audio.currentTime = 0
+  audio.play()
 }
 const keys = Array.from(document.querySelectorAll('.key'))
-keys.forEach((key) => key.addEventListener('transitionend', removeTransition))
-window.addEventListener('keydown', playSound)
+  keys.forEach((key) => key.addEventListener('transitionend', removeTransition))
+  window.addEventListener('keydown', playSound)
 </script>
 <style>
 html {
- font-size: 12px;
- background: url('drums.jpg') top center;
- background-size: 80%;
+  font-size: 12px;
+  background: url('drums.jpg') top center;
+  background-size: 80%;
 }
 .keys {
- display: flex;
- flex: 1;
- align-items: top;
- justify-content: center;
+  display: flex;
+  flex: 1;
+  align-items: top;
+  justify-content: center;
 }
 .key {
- border: 0.4rem solid blue;
- border-radius: 0.5rem;
- margin: 1rem;
- font-size: 2rem;
- padding: 1rem 0.5rem;
- transition: all 0.01s ease;
- width: 5rem;
- text-align: center;
- color: black;
- text-shadow: 0 0 0.5rem yellow;
+  border: 0.4rem solid blue;
+  border-radius: 0.5rem;
+  margin: 1rem;
+  font-size: 2rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.01s ease;
+  width: 5rem;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 0.5rem yellow;
 }
 </style>
 </html>
@@ -1814,7 +1813,9 @@ html {
 
 </details>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript: Music App</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
   <summary>JavaScript</summary>
@@ -1951,16 +1952,16 @@ will learn how mouse hover (over and out) events work through this project.
 ```[html]
 <!DOCTYPE html>
 <html>
- <head>
-   <title>My Sun Sign Infos</title>
- </head>
- <script>
- function display(element){
-   document.getElementById('image').innerHTML = element.alt;
- }
- function revert(){
-   document.getElementById('image').innerHTML = "Hover over a sunsign image to display details.";
- }
+  <head>
+    <title>My Sun Sign Infos</title>
+  </head>
+  <script>
+  function display(element){
+    document.getElementById('image').innerHTML = element.alt;
+  }
+  function revert(){
+    document.getElementById('image').innerHTML = "Hover over a sunsign image to display details.";
+  }
 </script>
 <style>
 #image {
