@@ -19,6 +19,7 @@ https://hackr.io/blog/javascript-projects
   <h3><a href="#ch9">9. Single Page Application</a></h3>
   <h3><a href="#ch10">10. To-Do List</a></h3>
   <h3><a href="#ch11">11. JS Rock, Paper, Scissors Game</a></h3>
+  <h3><a href="#ch12">12. JS Countdown Timer</a></h3>
 </blockquote>
 
 <h3>Introduction</h3>
@@ -2122,6 +2123,31 @@ how JavaScript can be used to enhance the interactivity and responsiveness of we
 <details>
   <summary>HTML</summary>
 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="todo-app">
+      <h1>My To-Do List</h1>
+      <form id="todo-form">
+          <input type="text" id="todo-input" placeholder="Add a new task...">
+          <button type="submit">Add Task</button>
+      </form>
+      <ul id="todo-list">
+          <!-- Tasks will be added here -->
+      </ul>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS</h4>
@@ -2129,12 +2155,163 @@ how JavaScript can be used to enhance the interactivity and responsiveness of we
 <details>
   <summary>CSS</summary>
 
+```
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #6DD5FA, #FF758C);
+  color: #333;
+}
+
+#todo-app {
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#todo-form input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#todo-form button {
+  padding: 10px 20px;
+  background-color: #5F9EA0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#todo-form button:hover {
+  background-color: #4682B4;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  background-color: #f9f9f9;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+```
+
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>JavaScript</summary>
+  
+```
+const todoForm = document.getElementById('todo-form');
+const todoInput = document.getElementById('todo-input');
+const todoList = document.getElementById('todo-list');
+
+todoForm.addEventListener('submit', function(event) {
+  event.preventDefault();
+  const newTask = todoInput.value;
+
+  if (newTask === '') {
+      alert('Please enter a task!');
+      return;
+  }
+  todoInput.value = '';
+  addTask(newTask);
+});
+
+function addTask(task) {
+  const listItem = document.createElement('li');
+  const taskText = document.createElement('span');
+  taskText.textContent = task;
+  listItem.appendChild(taskText);
+
+  const checkBox = document.createElement('input');
+  checkBox.setAttribute('type', 'checkbox');
+  listItem.appendChild(checkBox);
+
+  const deleteButton = document.createElement('button');
+  deleteButton.textContent = 'Delete';
+  listItem.appendChild(deleteButton);
+
+  todoList.appendChild(listItem);
+
+  const editButton = document.createElement('button');
+  editButton.textContent = 'Edit';
+  listItem.appendChild(editButton);
+
+  checkBox.addEventListener('change', function() {
+      if (this.checked) {
+          taskText.style.textDecoration = 'line-through';
+      } else {
+          taskText.style.textDecoration = 'none';
+      }
+  });
+ 
+  deleteButton.addEventListener('click', function() {
+      todoList.removeChild(listItem);
+  });
+
+  editButton.addEventListener('click', function() {
+      const isEditing = listItem.classList.contains('editing');
+ 
+      if (isEditing) {
+         
+          taskText.textContent = this.previousSibling.value;
+          listItem.classList.remove('editing');
+          editButton.textContent = 'Edit';
+      } else {
+         
+          const input = document.createElement('input');
+          input.type = 'text';
+          input.value = taskText.textContent;
+          listItem.insertBefore(input, taskText);
+          listItem.removeChild(taskText);
+          listItem.classList.add('editing');
+          editButton.textContent = 'Save';
+      }
+  });
+
+  saveTasksToLocalStorage();
+}
+
+function saveTasksToLocalStorage() {
+  const tasks = [];
+  document.querySelectorAll('#todo-list li').forEach(task => {
+      const taskText = task.querySelector('span').textContent;
+      const isCompleted = task.classList.contains('completed');
+      tasks.push({ text: taskText, completed: isCompleted });
+  });
+  localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const savedTasks = JSON.parse(localStorage.getItem('tasks')) || [];
+  savedTasks.forEach(task => {
+      addTask(task.text);
+  });
+});
+```
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2294,3 +2471,117 @@ function restartGame() {
 ```
 
 </details>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch12">12. JavaScript Countdown Timer</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="countdown">
+      <p id="timer">
+          <span id="days"></span>
+          <span class="timer-unit">Days</span>
+          <span id="hours"></span>
+          <span class="timer-unit">Hours</span>
+          <span id="minutes"></span>
+          <span class="timer-unit">Minutes</span>
+          <span id="seconds"></span>
+          <span class="timer-unit">Seconds</span>
+      </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+```
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
+
+```
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  color: white;
+}
+
+#countdown {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#timer {
+  font-size: 3rem;
+  letter-spacing: 3px;
+}
+
+.timer-unit {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  display: inline;
+}
+```
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>JavaScript</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JavaScript</summary>
+  
+```
+const targetDate = new Date('YYYY-MM-DDTHH:MM:SS'); // Set your target
+
+function updateCountdown() {
+  const currentTime = new Date();
+  const difference = targetDate - currentTime;
+
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours;
+  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("seconds").innerText = seconds;
+
+  if (difference < 0) {
+      clearInterval(interval);
+      document.getElementById("timer").innerText = "The event has started!";
+  }
+}
+
+const interval = setInterval(updateCountdown, 1000);
+```
+
+</details>
+
