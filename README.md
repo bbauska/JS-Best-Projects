@@ -94,7 +94,7 @@ that the program will work only for mouse events. Here is the complete code:
 <details>
   <summary>CSS: Calculator</summary>
 
-```css
+```[css]
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -192,7 +192,7 @@ button:hover {
 <details>
   <summary>JavaScript: Calculator</summary>
 
-```js
+```[js]
 const calculator = {
   displayValue: '0',
   firstOperand: null,
@@ -380,7 +380,7 @@ line by line.
 <details>
   <summary>CSS</summary>
 
-```
+```[css]
 body {
     background-color: #eee;
     margin: 0;
@@ -849,7 +849,7 @@ body {
 <details>
   <summary>JavaScript: Hangman</summary>
 
-```js
+```[js]
 /*
  * > Coded By Thomas Hj
  * > 31102016
@@ -1136,7 +1136,7 @@ author first starts with pseudocode and then goes on to explain each function in
 <details>
   <summary>CSS: Tic-Tac-Toe</summary>
   
-```css
+```[css]
 body {
     font-family: "Arial", sans-serif;
 }
@@ -1170,7 +1170,7 @@ section {
 <details>
   <summary>JavaScript: Tic-Tac-Toe</summary>
 
-```js
+```[js]
 const statusDisplay = document.querySelector('.game--status');
 
 let gameActive = true;
@@ -1267,7 +1267,7 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
 <details>
   <summary>HTML: 2nd Tic-Tac-Toe</summary>
 
-```
+```[html]
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1306,7 +1306,7 @@ document.querySelector('.game--restart').addEventListener('click', handleRestart
 <details>
   <summary>CSS: 2nd Tic-Tac-Toe</summary>
 
-```cs
+```[css]
 body {
   font-family: 'Arial', sans-serif;
   display: flex;
@@ -1371,7 +1371,7 @@ body {
 <details>
   <summary>JavaScript: 2nd Tic-Tac-Toe</summary>
 
-```js
+```[js]
 let currentPlayer = 'X'; // Player X always starts
 let gameBoard = ['', '', '', '', '', '', '', '', '']; // 3x3 game board
 let gameActive = true;
@@ -1528,7 +1528,7 @@ a single file (HTML), it is more convenient to maintain separate files.
 <details>
   <summary>CSS: Weather App</summary>
 
-```css
+```[css]
 * {
   margin: 0;
   padding: 0;
@@ -1635,7 +1635,7 @@ main {
 <details>
   <summary>JavaScript: Weather App</summary>
 
-```js
+```[js]
 const api = {
   key: "afaf9f8d48cff6cafd32e23220bcfdbf",
   base: "https://api.openweathermap.org/data/2.5/"
@@ -1808,7 +1808,7 @@ html {
 <details>
   <summary>CSS</summary>
 
-```css
+```[css]
 
 ```
 
@@ -1819,7 +1819,7 @@ html {
 <details>
   <summary>JavaScript</summary>
 
-```js
+```[js]
 
 ```
 
@@ -2012,7 +2012,7 @@ the user hovers over the images.
 <details>
   <summary>CSS</summary>
 
-```css
+```[css]
 
 ```
 
@@ -2023,7 +2023,7 @@ the user hovers over the images.
 <details>
   <summary>JavaScript</summary>
 
-```js
+```[js]
 
 ```
 
