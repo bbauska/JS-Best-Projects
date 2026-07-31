@@ -876,7 +876,7 @@ window.onload = function() {
         tY = e.touches[0].clientY
         eL = gId("tastatur")
         resY = wH - tY - eL.offsetHeight
-        if(resY < 0) {
+        if(resY &lt; 0) {
             resY = 0
         } else if(resY > wH / 2) {
             resY = wH / 2
@@ -903,7 +903,7 @@ function newGame() {
 // Clear keyboard
 function clearTastatur() {
     var e = document.getElementsByClassName("b")
-    for(a = 0; a < e.length; a++) {
+    for(a = 0; a &lt; e.length; a++) {
         e[a].setAttribute("data", "")
     }
 }
@@ -932,7 +932,7 @@ function createWord() {
   var d = gId("letter")
   d.innerHTML = ""
   select = Math.floor(Math.random() * word.length)
-  for(a = 0; a < word[select][0].length; a++) {
+  for(a = 0; a &lt; word[select][0].length; a++) {
     var x = word[select][0][a].toUpperCase()
     var b = document.createElement("span")
     b.className = "l" + (x == " " ? " ls" : "")
@@ -951,7 +951,7 @@ function createWord() {
 function createTastur() {
   var tas = gId("keybord")
   tas.innerHTML = ""
-  for(a = 0; a < tastatur.length; a++) {
+  for(a = 0; a &lt; tastatur.length; a++) {
     var b = document.createElement("span")
     b.className = "b"
     b.innerText = tastatur[a]
@@ -1040,7 +1040,7 @@ function showNextFail() {
 }
 
 function typeWord(e) {
-    for(a = 0; a < word[select][0].length; a++) {
+    for(a = 0; a &lt; word[select][0].length; a++) {
         if(word[select][0][a].toUpperCase() == e) {
             gId("l" + a).innerText = e
         }
@@ -1206,7 +1206,7 @@ function handlePlayerChange() {
 
 function handleResultValidation() {
     let roundWon = false;
-    for (let i = 0; i <= 7; i++) {
+    for (let i = 0; i &lt;= 7; i++) {
         const winCondition = winningConditions[i];
         let a = gameState[winCondition[0]];
         let b = gameState[winCondition[1]];
@@ -1402,7 +1402,7 @@ cells.forEach(cell => {
 });
 
 function updateUI() {
-  for (let i = 0; i < cells.length; i++) {
+  for (let i = 0; i &lt; cells.length; i++) {
       cells[i].innerText = gameBoard[i];
   }
 }
@@ -1431,7 +1431,7 @@ const winConditions = [
 function checkForWinOrDraw() {
   let roundWon = false;
 
-  for (let i = 0; i < winConditions.length; i++) {
+  for (let i = 0; i &lt; winConditions.length; i++) {
       const [a, b, c] = winConditions[i];
       if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
           roundWon = true;
@@ -1918,7 +1918,7 @@ Here is the complete code of a simple form with basic validations:
            </tr>
         </table>
         <p id="demo" style="color:red; text-align:center"></p>
-  <div style="text-align:center"><input type = "submit" value = "Submit" /></div>
+     <div style="text-align:center"><input type = "submit" value = "Submit" /></div>
      </form>
   </body>
 </html>
@@ -1931,7 +1931,6 @@ Here is the complete code of a simple form with basic validations:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <h4>JavaScript: Form Validation</h4>
-
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>7. Photo Details Display</h3>
@@ -1963,39 +1962,39 @@ will learn how mouse hover (over and out) events work through this project.
    document.getElementById('image').innerHTML = "Hover over a sunsign image to display details.";
  }
 </script>
- <style>
- #image{
-     width: 650px;
-     height: 70px;
-     border:5px solid pink;
-     background-color: black;
-     background-repeat: no-repeat;
-     color:white;
-     background-size: 100%;
-     font-family: Didot;
-     font-size: 150%;
-     line-height: 60px;
-     text-align: center;
- }
- img{
- width: 200px;
- height: 200px;
- border-radius: 50%;
- }
- </style>
- <body>
-   <div>
-   <p id = "image">Hover over a sunsign image to display details.<p>
-   <img alt = "Sagittarius are beautiful, loyal and passionate." 
-     src = "saggi.jpg" onmouseover = "display(this)" onmouseout = "revert()">
-   <img alt = "Pisces are dreamy, helpful and love everyone!" 
-     src = "pisces.jpg" onmouseover = "display(this)" onmouseout = "revert()">
-   <img alt = "Leo are strong and fearless. They aim for and achieve a lot!" 
-     src = "leo.jpg" onmouseover = "display(this)" onmouseout = "revert()">
-   <img alt = "Scorpions are friends for life. They are trustworthy and truthful." 
-     src = "scorpio.jpg" onmouseover = "display(this)" onmouseout = "revert()">
-   </div>
- </body>
+<style>
+#image {
+  width: 650px;
+  height: 70px;
+  border:5px solid pink;
+  background-color: black;
+  background-repeat: no-repeat;
+  color:white;
+  background-size: 100%;
+  font-family: Didot;
+  font-size: 150%;
+  line-height: 60px;
+  text-align: center;
+}
+img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+</style>
+<body>
+  <div>
+  <p id = "image">Hover over a sunsign image to display details.<p>
+  <img alt = "Sagittarius are beautiful, loyal and passionate." 
+    src = "saggi.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+  <img alt = "Pisces are dreamy, helpful and love everyone!" 
+    src = "pisces.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+  <img alt = "Leo are strong and fearless. They aim for and achieve a lot!" 
+    src = "leo.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+  <img alt = "Scorpions are friends for life. They are trustworthy and truthful." 
+    src = "scorpio.jpg" onmouseover = "display(this)" onmouseout = "revert()">
+  </div>
+</body>
 </html>
 ```
 
