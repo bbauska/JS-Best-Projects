@@ -18,6 +18,8 @@
   <h3><a href="#ch11">11. JS Rock, Paper, Scissors Game</a></h3>
   <h3><a href="#ch12">12. JS Countdown Timer</a></h3>
   <h3><a href="#ch13">13. Animated Business Card</a></h3>
+  <h3><a href="#ch14">14. Interactive Photo Gallery</a></h3>
+  <h3><a href="#ch15">15. 10 Best Computer Science Projects To Hone Your Skills</a></h3>
 </blockquote>
 
 <h3>Introduction</h3>
@@ -2126,7 +2128,7 @@ nav button:hover {
 
 @media (max-width: 600px) {
   #gallery {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   }
 }
 ```
@@ -2142,19 +2144,19 @@ nav button:hover {
 function filterGallery(category) {
   const photos = document.querySelectorAll('.photo');
   photos.forEach(photo => {
-      const isVisible = category === 'all' || photo.classList.contains(category);
-      photo.style.display = isVisible ? '' : 'none';
+    const isVisible = category === 'all' || photo.classList.contains(category);
+    photo.style.display = isVisible ? '' : 'none';
   });
 }
 
 document.querySelectorAll('.photo img').forEach(img => {
   img.addEventListener('click', function() {
-      const modal = document.getElementById('myModal');
-      const modalImg = document.getElementById('img01');
-      const captionText = document.getElementById('caption');
-      modal.style.display = 'block';
-      modalImg.src = this.src;
-      captionText.innerHTML = this.nextElementSibling.innerHTML;
+    const modal = document.getElementById('myModal');
+    const modalImg = document.getElementById('img01');
+    const captionText = document.getElementById('caption');
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.nextElementSibling.innerHTML;
   });
 });
 
@@ -2166,10 +2168,10 @@ closeButton.onclick = function() {
 
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Escape') {
-      const modal = document.getElementById('myModal');
-      if (modal.style.display === 'block') {
-          modal.style.display = 'none';
-      }
+    const modal = document.getElementById('myModal');
+    if (modal.style.display === 'block') {
+      modal.style.display = 'none';
+    }
   }
 });
 ```
@@ -2263,15 +2265,15 @@ how JavaScript can be used to enhance the interactivity and responsiveness of we
 </head>
 <body>
   <div id="todo-app">
-      <h1>My To-Do List</h1>
-      <form id="todo-form">
-          <input type="text" id="todo-input" placeholder="Add a new task...">
-          <button type="submit">Add Task</button>
-      </form>
-      <ul id="todo-list">
-          <!-- Tasks will be added here -->
-      </ul>
-    </div>
+    <h1>My To-Do List</h1>
+    <form id="todo-form">
+      <input type="text" id="todo-input" placeholder="Add a new task...">
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="todo-list">
+      <!-- Tasks will be added here -->
+    </ul>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
@@ -2822,6 +2824,14 @@ const interval = setInterval(updateCountdown, 1000);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 [Animated Business Card](https://hackr.io/blog/how-to-create-a-html-animated-business-card)
 
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+
+
 ```
 <!DOCTYPE html>
 <html lang="en">
@@ -2850,6 +2860,13 @@ const interval = setInterval(updateCountdown, 1000);
 </body>
 </html>
 ```
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
 
 ```
 body {
@@ -2909,4 +2926,245 @@ a:hover {
   }
 }
 ```
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch14">14. Interactive Photo Gallery</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>HTML</summary>
+
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+      <h1>My Photo Gallery</h1>
+      <p>Explore my collection of high-quality images ranging from landscapes to portraits.</p>
+    </header>
+    <nav>
+      <button class="filter" onclick="filterGallery('all')">All</button>
+      <button class="filter" onclick="filterGallery('landscapes')">Landscapes</button>
+      <button class="filter" onclick="filterGallery('portraits')">Portraits</button>
+      <!-- Add more filters as needed -->
+    </nav>
+  <section id="gallery">
+    <div class="photo">
+      <img src="other_1.jpg" alt="Hot Air Balloon">
+      <p class="caption">Hot Air Balloon</p>
+    </div>
+    <div class="photo">
+      <img src="other_2.jpg" alt="Carpenter In Front Of House">
+      <p class="caption">Carpenter In Front Of House</p>
+    </div>
+    <div class="photo">
+      <img src="other_3.jpg" alt="Surfer Catching Air">
+      <p class="caption">Surfer Catching Air</p>
+    </div>
+    <div class="photo landscapes">
+      <img src="landscape_1.jpg" alt="Lake With Mountains">
+      <p class="caption">Lake With Mountains</p>
+    </div>
+    <div class="photo landscapes">
+      <img src="landscape_2.jpg" alt="Cabin On The Lake">
+      <p class="caption">Cabin On The Lake</p>
+    </div>
+    <div class="photo landscapes">
+      <img src="landscape_3.jpg" alt="Dramatic Hillside">
+      <p class="caption">Dramatic Hillside</p>
+    </div>
+    <div class="photo portraits">
+      <img src="portrait_1.jpg" alt="Dramatic Female Portrait">
+      <p class="caption">Dramatic Female Portrait</p>
+    </div>
+    <div class="photo portraits">
+      <img src="portrait_2.jpg" alt="Woman With Balloons">
+      <p class="caption">Woman With Balloons</p>
+    </div>
+    <div class="photo portraits">
+      <img src="portrait_3.jpg" alt="Woman With Binary Projection">
+      <p class="caption">Woman With Binary Projection</p>
+    </div>
+  </section>
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>  
+</body>
+</html>
+```
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>CSS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>CSS</summary>
+
+```
+header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Roboto', sans-serif;
+}
+header h1 {
+  font-size: 24px;
+  color: #333;
+}
+header p {
+  font-size: 16px;
+  color: #666;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+.photo {
+  position: relative;
+}
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.photo .caption {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+}
+
+nav button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Roboto', sans-serif;
+}
+nav button:hover {
+  background-color: #eee;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0,0.9);
+  font-family: 'Roboto', sans-serif;
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+#caption {
+  color: #ccc;
+  font-size: 16px;
+  padding: 15px 20px;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  #gallery {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+```
+
+</details>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>JS</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<details>
+  <summary>JS</summary>
+
+```
+function filterGallery(category) {
+  const photos = document.querySelectorAll('.photo');
+  photos.forEach(photo => {
+    const isVisible = category === 'all' || photo.classList.contains(category);
+    photo.style.display = isVisible ? '' : 'none';
+  });
+}
+
+document.querySelectorAll('.photo img').forEach(img => {
+  img.addEventListener('click', function() {
+    const modal = document.getElementById('myModal');
+    const modalImg = document.getElementById('img01');
+    const captionText = document.getElementById('caption');
+    modal.style.display = 'block';
+    modalImg.src = this.src;
+    captionText.innerHTML = this.nextElementSibling.innerHTML;
+  });
+});
+
+const closeButton = document.querySelector('.close');
+closeButton.onclick = function() {
+  const modal = document.getElementById('myModal');
+  modal.style.display = 'none';
+}
+
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    const modal = document.getElementById('myModal');
+    if (modal.style.display === 'block') {
+      modal.style.display = 'none';
+    }
+  }
+});
+```
+
+</details>
+
+
+<h3 id="ch15">15. 10 Best Computer Science Projects To Hone Your Skills</h3>
+
+<a href="https://hackr.io/blog/best-computer-science-projects?source=k8mepg2dMy">here</a>
 
