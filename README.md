@@ -1,9 +1,6 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1>JS-Best-Projects</h1>
+<h1><a href="https://hackr.io/blog/javascript-projects">JS-Best-Projects</a></h1>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-https://hackr.io/blog/javascript-projects
-
 <h2>13+ Best Javascript Projects to Build your Skills [Javascript Examples]</h2>
 <blockquote>
   <h3><a href="#ch1">1. Calculator</a></h3>
@@ -24,12 +21,12 @@ https://hackr.io/blog/javascript-projects
 </blockquote>
 
 <h3>Introduction</h3>
-One of the most popular scripting languages, JavaScript is used in all the web applications for validation, 
+<p>One of the most popular scripting languages, JavaScript is used in all the web applications for validation, 
 rendering dynamic content, interactive graphics and maps, and much more. Along with HTML and CSS, JS has 
 the power to build complete, robust web applications. Because of JS, the user can interact with a web 
 page and see all the interesting elements on the page. As we explore the projects, we will come to know-
 how js helps in building interactive web pages. Before that, let us quickly go through the important 
-features of JS:
+features of JS:</p>
 
 - Used on both client-side and server-side to create interactive web content.
 - Greatly improves user experience by providing dynamic functionality.
@@ -48,19 +45,17 @@ can take up basic JavaScript courses and then come back to these projects. If yo
 <h3>Best JavaScript Projects for Beginners</h3>
 <p>There is a lot you can do with JavaScript, but we don’t want to overwhelm you with everything yet. We 
 have listed the top JavaScript projects that can add value to your resume as well as a career:</p>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch1">1. JavaScript Calculator</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-We will use simple HTML, CSS, and make all the components work using basic JavaScript 
+<p>We will use simple HTML, CSS, and make all the components work using basic JavaScript 
 functions. To display buttons and numbers, we will use HTML, and add some beautification 
 to them using CSS. To make the buttons perform the respective functions we will use 
-JavaScript. 
+JavaScript.</p>
 
-The main function is eval(), which is a global JS function that solves JS codes. The 
+<p>The main function is eval(), which is a global JS function that solves JS codes. The 
 display() function will display the selected number on the calculator screen. Note 
-that the program will work only for mouse events. Here is the complete code:
-
+that the program will work only for mouse events. Here is the complete code:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Calculator</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -326,15 +321,13 @@ keys.addEventListener('click', event => {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch2">2. <a href="https://www.sololearn.com/en/compiler-playground/WyyBylG1NvdU/#js">Hangman Game</a></h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
-Hangman is a well-known game, and one of our simple JS projects. You can develop it in a jiffy 
+<p>Hangman is a well-known game, and one of our simple JS projects. You can develop it in a jiffy 
 using JavaScript, HTML, and CSS. Note that the main functionality is defined using JS. HTML is 
-for display, and CSS does the job of beautifying the contents. 
+for display, and CSS does the job of beautifying the contents.</p>
 
-Many methods are defined in the JS code, so it may seem a bit complicated, but you will realize 
+<p>Many methods are defined in the JS code, so it may seem a bit complicated, but you will realize 
 it is simple once you read the code thoroughly. You can also run the code and see the execution 
-line by line.
-
+line by line.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Hangman</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1099,11 +1092,10 @@ function gId(a) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch3">3. Tic Tac Toe Game</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-JavaScript makes it easy to develop a Tic-Tac-Toe game yourself. You can look at the entire code 
+<p>JavaScript makes it easy to develop a Tic-Tac-Toe game yourself. You can look at the entire code 
 here, and it explains how to build a 3x3 tic-tac-toe step by step. Then, you can later expand to 
 NxN for your own practice and knowledge. The HTML and CSS for the project are quite simple. The 
-author first starts with pseudocode and then goes on to explain each function individually.
-
+author first starts with pseudocode and then goes on to explain each function individually.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Tic-Tac-Toe</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1486,16 +1478,15 @@ resetButton.addEventListener('click', resetGame, false);
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch4">4. Weather App</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Weather apps are also popular JavaScript projects. Once you change the location name in this project, 
-the weather display changes immediately without a page refresh. The UI is also quite sleek. 
+<p>Weather apps are also popular JavaScript projects. Once you change the location name in this project, 
+the weather display changes immediately without a page refresh. The UI is also quite sleek.</p>
 
-Note that most weather apps use an API that gets the weather data. We will use the popular and most 
-common API, OpenWeatherMap. 
+<p>Note that most weather apps use an API that gets the weather data. We will use the popular and most 
+common API, OpenWeatherMap.</p>
 
-Check out this Youtube video that explains the weather app code and functionality in detail. There 
+<p>Check out this Youtube video that explains the weather app code and functionality in detail. There 
 are three files, as usual: index.html, main.js, and main.css. Although you can put all the code in 
-a single file (HTML), it is more convenient to maintain separate files. 
-
+a single file (HTML), it is more convenient to maintain separate files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Weather App</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1709,13 +1700,12 @@ function dateBuilder (d) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5">5. Music Events</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here, we’ll introduce you to event listeners that will act on keyboard events. For example, an event 
-will take place if the ‘S’ key is pressed. Each one will have a different code and action. 
+<p>Here, we’ll introduce you to event listeners that will act on keyboard events. For example, an event 
+will take place if the ‘S’ key is pressed. Each one will have a different code and action.</p>
 
-Apart from event listeners, we will also learn how to add and play audio files. Note that we have added 
+<p>Apart from event listeners, we will also learn how to add and play audio files. Note that we have added 
 very basic CSS, as the focus here is on JavaScript. You will have to import your own sounds and 
-background image for the program to work fully.
-
+background image for the program to work fully.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Music</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1858,15 +1848,14 @@ html {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6">6. Form Validation</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Form validation is a useful aspect and used by many websites for client-side validation of user information, 
+<p>Form validation is a useful aspect and used by many websites for client-side validation of user information, 
 such as card and address details. For example, if there is a mandatory input field name, the user may type 
-a number, leave the field blank, or type just one letter. JS can validate this information. 
+a number, leave the field blank, or type just one letter. JS can validate this information.</p>
 
-The project below involves simple form validation. Of course, the project will need HTML elements as well. 
-We have not carried out any extensive styling, only including basic elements in the HTML itself. 
+<p>The project below involves simple form validation. Of course, the project will need HTML elements as well. 
+We have not carried out any extensive styling, only including basic elements in the HTML itself.</p>
 
-Here is the complete code of a simple form with basic validations:
-
+<p>Here is the complete code of a simple form with basic validations:</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Form Validation</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1965,12 +1954,11 @@ Here is the complete code of a simple form with basic validations:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7">7. Photo Details Display</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here, we will display some images on a web page. Once the user hovers over the images, more details 
-will appear. You can download images from anywhere or use the ones you already have. 
+<p>Here, we will display some images on a web page. Once the user hovers over the images, more details 
+will appear. You can download images from anywhere or use the ones you already have.</p>
 
-Again, we have used basic HTML and CSS along with JS. The latter carries out most of the work. You 
-will learn how mouse hover (over and out) events work through this project.
-
+<p>Again, we have used basic HTML and CSS along with JS. The latter carries out most of the work. You 
+will learn how mouse hover (over and out) events work through this project.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Photo Details Display</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2030,10 +2018,9 @@ img {
 
 </details>
 
-To make this project more complex, try this slideshow project from W3Schools. You can change the 
+<p>To make this project more complex, try this slideshow project from W3Schools. You can change the 
 onClick events to onmousehover and onmouseout events, in which case, the images will change once 
-the user hovers over the images.
-
+the user hovers over the images.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Photo App</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2192,12 +2179,11 @@ document.addEventListener('keydown', function(event) {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8">8. Build an Interactive Landing Page</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-This project involves building a dynamic landing page that stores your name and text written in local 
+<p>This project involves building a dynamic landing page that stores your name and text written in local 
 storage, and shows you an appropriate image and greeting message based on the day's time. This YouTube 
-video will help you learn about this project’s JS components.
+video will help you learn about this project’s JS components.</p>
 
 https://www.youtube.com/watch?v=fSTQzlprGLI
-
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
@@ -2224,9 +2210,9 @@ https://www.youtube.com/watch?v=fSTQzlprGLI
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch9">9. Single Page Application</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-Here, the page won’t reload upon navigating the side links, but the content will change. Again, we will 
+<p>Here, the page won’t reload upon navigating the side links, but the content will change. Again, we will 
 use eventListeners to change the view from one link to another. Check out the code and explanation on 
-this YouTube video.
+this YouTube video.</p>
 
 https://www.youtube.com/watch?v=6BozpmSjk-Y
 
@@ -2255,12 +2241,11 @@ https://www.youtube.com/watch?v=6BozpmSjk-Y
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch10">10. JavaScript To-Do List</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this JavaScript project, you'll build a To-Do List app, a practical and highly useful application 
-that is a staple in many people's daily productivity routines.
+<p>In this JavaScript project, you'll build a To-Do List app, a practical and highly useful application 
+that is a staple in many people's daily productivity routines.</p>
 
-This project is not just about creating a functional tool; it’s also a brilliant demonstration of 
-how JavaScript can be used to enhance the interactivity and responsiveness of web pages.
-
+<p>This project is not just about creating a functional tool; it’s also a brilliant demonstration of 
+how JavaScript can be used to enhance the interactivity and responsiveness of web pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2461,17 +2446,16 @@ document.addEventListener('DOMContentLoaded', function() {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch11">11. JavaScript Rock, Paper, Scissors Game</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-In this JavaScript project, you'll create the timeless classic Rock Paper Scissors game. It really 
+<p>In this JavaScript project, you'll create the timeless classic Rock Paper Scissors game. It really 
 needs no introduction, but this is an engaging and interactive application that brings a classic 
-game to your web browser.
+game to your web browser.</p>
 
-But this JavaScript project goes beyond merely replicating a well-known game; it's also a fantastic 
-showcase of JavaScript's power to create dynamic and responsive web experiences.
+<p>But this JavaScript project goes beyond merely replicating a well-known game; it's also a fantastic 
+showcase of JavaScript's power to create dynamic and responsive web experiences.</p>
 
-It's also a solid portfolio piece, particularly if you want to highlight your web development 
+<p>It's also a solid portfolio piece, particularly if you want to highlight your web development 
 prowess by using core programming principles in a context that's both enjoyable and easy to 
-understand.
-
+understand.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
