@@ -3332,7 +3332,6 @@ document.addEventListener('keydown', function(event) {
 
 </details>
 
-
 <h3 id="ch15">15. 10 Best Computer Science Projects To Hone Your Skills</h3>
 
 <a href="https://hackr.io/blog/best-computer-science-projects?source=k8mepg2dMy">here</a>
@@ -3341,6 +3340,8 @@ document.addEventListener('keydown', function(event) {
 <h3 id="ch16">16. Text to Speech Converter</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p></p>
+<details>
+  <summary>HTML</summary>
 
 ```
 <!DOCTYPE html>
@@ -3382,6 +3383,9 @@ document.addEventListener('keydown', function(event) {
 
 </html>
 ```
+
+<details>
+  <summary>CSS</summary>
 
 ```
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -3456,6 +3460,9 @@ body {
 }
 ```
 
+</details>
+<details>
+  <summary>JS</summary>
 
 ```
 const text = document.getElementById("textToConvert");
@@ -3485,5 +3492,7 @@ convertBtn.addEventListener('click', function () {
     }, 5000);
 });
 ```
+
+</details>
 
 
