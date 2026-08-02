@@ -3562,7 +3562,7 @@ created using the new keyword.</p>
   - Instance Properties: An instance property is a property that has a new copy for every new instance of the class.
 
 | Instance Properties |  Description |
------------------------------------------------------------------------------------
+----------------------|-------------------------------------------------------------
 | constructor | It is used to return the constructor function of Map. |
 | size	      |  Return the number of keys, and value pairs stored in a map. |
 
