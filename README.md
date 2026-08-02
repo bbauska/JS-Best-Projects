@@ -21,6 +21,7 @@
   <h3><a href="#ch14">14. Interactive Photo Gallery</a></h3>
   <h3><a href="#ch15">15. 10 Best Computer Science Projects To Hone Your Skills</a></h3>
   <h3><a href="#ch16">16. Text to Speech Converter</a></h3>
+  <h3><a href="#ch17">17. JavaScript Map Reference</a></h3>
 </blockquote>
 
 <h3>Introduction</h3>
@@ -3384,6 +3385,7 @@ document.addEventListener('keydown', function(event) {
 </html>
 ```
 
+</details>
 <details>
   <summary>CSS</summary>
 
@@ -3496,3 +3498,43 @@ convertBtn.addEventListener('click', function () {
 </details>
 
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h3 id="ch17">17. JavaScript Map Reference</h3>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p></p>
+
+The complete list of JavaScript Map is listed below:
+
+JavaScript Map Constructor: In JavaScript, a constructor gets called when an object is created using the new keyword.
+
+Constructor         Description
+
+Map()	            Create Map objects in JavaScript.
+
+JavaScript Map Properties: A JavaScript property is a member of an object that associates a key with a value.
+
+Instance Properties: An instance property is a property that has a new copy for every new instance of the class.
+
+Instance Properties	    Description
+
+constructor	            It is used to return the constructor function of Map.
+size	                Return the number of keys, and value pairs stored in a map.
+
+JavaScript Map Methods: JavaScript methods are actions that can be performed on objects.
+
+Instance Methods: If the method is called on the instance of a Map then it is called an instance method of Map.
+
+Static Methods      Description
+
+clear( )	        Removal of all the elements from a map and making it empty.
+delete()	        Delete the specified element among all the elements which are present in the map.
+entries( )	        Returning an iterator object which contains all the [key, value] pairs of each element of the map.
+forEach()	        The map with the given function executes the given function over each key-value pair.
+get( )	            Returning a specific element among all the elements which are present in a map.
+has( )	            Check whether an element with a specified key exists in a map or not.
+keys()	            The keys from a given map object return the iterator object of keys.
+set()	            Add key-value pairs to a Map object.
+values()	        Return a new Iterator object that contains the value of each element present in Map.
+
+<details>
+  <summary>HTML</summary>
