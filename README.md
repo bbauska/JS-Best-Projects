@@ -1710,7 +1710,7 @@ background image for the program to work fully.</p>
 <h4>HTML: Music</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
+  <summary>HTML Music Events</summary>
 
 ```html
 <html>
@@ -1810,10 +1810,10 @@ html {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Music App</summary>
 
 ```css
-
+see html
 ```
 
 </details>
@@ -1821,10 +1821,10 @@ html {
 <h4>JavaScript: Music App</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript</summary>
+  <summary>JavaScript Music App</summary>
 
 ```javascript
-
+see html
 ```
 
 </details>
@@ -1835,7 +1835,7 @@ html {
 <h4>HTML: Drums</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
+  <summary>HTML Drums</summary>
 
 ```
 <!DOCTYPE html>
@@ -1869,7 +1869,7 @@ html {
 </details>
 
 <details>
-  <summary>JS</summary>
+  <summary>JS Drums index.js</summary>
 
 ```
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
@@ -1933,7 +1933,7 @@ function buttonAnimation(currentKey) {
 </details>
 
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Drums</summary>
 
 ```
 body {
@@ -2021,7 +2021,7 @@ We have not carried out any extensive styling, only including basic elements in 
 <h4>HTML: Form Validation</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
+  <summary>HTML Form Validation</summary>
 
 ```html
 <html>
@@ -2107,7 +2107,9 @@ We have not carried out any extensive styling, only including basic elements in 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Form Validation</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<p>See HTML</p>
 <h4>JavaScript: Form Validation</h4>
+<p>See HTML</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7">7. Photo Details Display</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2182,7 +2184,7 @@ the user hovers over the images.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Photo App</summary>
 
 ```css
 header {
@@ -2289,10 +2291,11 @@ nav button:hover {
 
 </details>
 
-<h4>JavaScript: Photo App</h4>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>JavaScript Photo App</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript</summary>
+  <summary>JavaScript Photo App</summary>
 
 ```javascript
 function filterGallery(category) {
@@ -2331,7 +2334,6 @@ document.addEventListener('keydown', function(event) {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch8">8. Build an Interactive Landing Page</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2342,24 +2344,24 @@ video will help you learn about this project’s JS components.</p>
 https://www.youtube.com/watch?v=fSTQzlprGLI
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>HTML</h4>
+<h4>HTML Interactive Landing Page</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
+  <summary>HTML Interactive Landing Page</summary>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>CSS</h4>
+<h4>CSS Interactive Landing Page</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Interactive Landing Page</summary>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>JavaScript</h4>
+<h4>JS Interactive Landing Page</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript</summary>
+  <summary>JS Interactive Landing Page</summary>
 
 </details>
 
@@ -2373,27 +2375,26 @@ this YouTube video.</p>
 https://www.youtube.com/watch?v=6BozpmSjk-Y
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>HTML</h4>
+<h4>HTML Single Page Application</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
+  <summary>HTML Single Page Application</summary>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>CSS</h4>
+<h4>CSS Single Page Application</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Single Page Application</summary>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>JavaScript</h4>
+<h4>JS Single Page Application</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript</summary>
+  <summary>JS Single Page Application</summary>
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch10">10. JavaScript To-Do List</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2403,7 +2404,7 @@ that is a staple in many people's daily productivity routines.</p>
 <p>This project is not just about creating a functional tool; it’s also a brilliant demonstration of 
 how JavaScript can be used to enhance the interactivity and responsiveness of web pages.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>HTML</h4>
+<h4>HTML To-Do List</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML To-Do List</summary>
@@ -2435,7 +2436,7 @@ how JavaScript can be used to enhance the interactivity and responsiveness of we
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>CSS</h4>
+<h4>CSS To-Do List</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>CSS To-Do List</summary>
@@ -2503,10 +2504,10 @@ body {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>JavaScript</h4>
+<h4>JS To-Do List</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript To-Do List</summary>
+  <summary>JS To-Do List</summary>
   
 ```
 const todoForm = document.getElementById('todo-form');
@@ -2726,10 +2727,10 @@ body {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>JavaScript Rock, Paper, Scissors</h4>
+<h4>JS Rock, Paper, Scissors</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript Rock, Paper, Scissors</summary>
+  <summary>JS Rock, Paper, Scissors</summary>
   
 ```
 const rockButton = document.getElementById('rock');
@@ -2863,7 +2864,7 @@ function restartGame() {
 <h3 id="ch12">12. JavaScript Countdown Timer</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>HTML</h4>
+<h4>HTML Countdown Timer</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
   <summary>HTML Countdown Timer</summary>
@@ -2938,10 +2939,10 @@ body {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>JavaScript Countdown Timer</h4>
+<h4>JS Countdown Timer</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript Countdown Timer</summary>
+  <summary>JS Countdown Timer</summary>
   
 ```
 const targetDate = new Date('YYYY-MM-DDTHH:MM:SS'); // Set your target
@@ -3316,7 +3317,7 @@ document.addEventListener('keydown', function(event) {
 <h3 id="ch15">15. 10 Best Computer Science Projects To Hone Your Skills</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
-<a href="https://hackr.io/blog/best-computer-science-projects?source=k8mepg2dMy">here</a>
+<p><a href="https://hackr.io/blog/best-computer-science-projects?source=k8mepg2dMy">Best CS Projects to Hone Skills</a>.</p>
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch16">16. Text to Speech Converter</h3>
@@ -3371,7 +3372,6 @@ document.addEventListener('keydown', function(event) {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS Text to Speech Converter</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3452,12 +3452,9 @@ body {
 ```
 
 </details>
-
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JS Text to Speech Converter</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <details>
   <summary>JS Text to Speech Converter</summary>
 
