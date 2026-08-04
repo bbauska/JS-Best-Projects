@@ -335,7 +335,6 @@ line by line.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Hangman</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <details>
   <summary>HTML: Hangman</summary>
 
@@ -386,7 +385,6 @@ line by line.</p>
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Hangman</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -855,7 +853,6 @@ body {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript: Hangman</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1494,7 +1491,6 @@ a single file (HTML), it is more convenient to maintain separate files.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Weather App</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <details>
   <summary>HTML: Weather App</summary>
 
@@ -1713,7 +1709,6 @@ background image for the program to work fully.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Music</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <details>
   <summary>HTML</summary>
 
@@ -1810,7 +1805,6 @@ html {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Music App</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -1823,11 +1817,9 @@ html {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>JavaScript: Music App</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <details>
   <summary>JavaScript</summary>
 
@@ -1836,14 +1828,12 @@ html {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch5b">5b. Drums</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Drums</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <details>
   <summary>HTML</summary>
 
@@ -2016,7 +2006,6 @@ h1 {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch6">6. Form Validation</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2031,7 +2020,6 @@ We have not carried out any extensive styling, only including basic elements in 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Form Validation</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <details>
   <summary>HTML</summary>
 
@@ -2116,13 +2104,10 @@ We have not carried out any extensive styling, only including basic elements in 
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>CSS: Form Validation</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <h4>JavaScript: Form Validation</h4>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch7">7. Photo Details Display</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -2134,7 +2119,6 @@ will learn how mouse hover (over and out) events work through this project.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML: Photo Details Display</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <details>
   <summary>HTML: Photo</summary>
 
@@ -2422,7 +2406,7 @@ how JavaScript can be used to enhance the interactivity and responsiveness of we
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
+  <summary>HTML To-Do List</summary>
 
 ```
 <!DOCTYPE html>
@@ -2454,7 +2438,7 @@ how JavaScript can be used to enhance the interactivity and responsiveness of we
 <h4>CSS</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>CSS</summary>
+  <summary>CSS To-Do List</summary>
 
 ```
 body {
@@ -2522,7 +2506,7 @@ body {
 <h4>JavaScript</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript</summary>
+  <summary>JavaScript To-Do List</summary>
   
 ```
 const todoForm = document.getElementById('todo-form');
@@ -2629,10 +2613,10 @@ showcase of JavaScript's power to create dynamic and responsive web experiences.
 prowess by using core programming principles in a context that's both enjoyable and easy to 
 understand.</p>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>HTML</h4>
+<h4>HTML Rock, Paper, Scissors</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
+  <summary>HTML Rock, Paper, Scissors</summary>
 
 ```
 <!DOCTYPE html>
@@ -2669,10 +2653,10 @@ understand.</p>
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>CSS</h4>
+<h4>CSS Rock, Paper, Scissors</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Rock, Paper, Scissors</summary>
 
 ```
 body {
@@ -2742,10 +2726,10 @@ body {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>JavaScript</h4>
+<h4>JavaScript Rock, Paper, Scissors</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript</summary>
+  <summary>JavaScript Rock, Paper, Scissors</summary>
   
 ```
 const rockButton = document.getElementById('rock');
@@ -2875,16 +2859,14 @@ function restartGame() {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch12">12. JavaScript Countdown Timer</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>HTML</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
+  <summary>HTML Countdown Timer</summary>
 
 ```
 <!DOCTYPE html>
@@ -2915,10 +2897,10 @@ function restartGame() {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>CSS</h4>
+<h4>CSS Countdown Timer</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Countdown Timer</summary>
 
 ```
 body {
@@ -2956,10 +2938,10 @@ body {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>JavaScript</h4>
+<h4>JavaScript Countdown Timer</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JavaScript</summary>
+  <summary>JavaScript Countdown Timer</summary>
   
 ```
 const targetDate = new Date('YYYY-MM-DDTHH:MM:SS'); // Set your target
@@ -2988,19 +2970,18 @@ const interval = setInterval(updateCountdown, 1000);
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch13">13. Animated Business Card</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 [Animated Business Card](https://hackr.io/blog/how-to-create-a-html-animated-business-card)
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>HTML</h4>
+<h4>HTML Animated Business Cards</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
-
+  <summary>HTML Animated Business Cards</summary>
 
 ```
 <!DOCTYPE html>
@@ -3033,10 +3014,10 @@ const interval = setInterval(updateCountdown, 1000);
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>CSS</h4>
+<h4>CSS Animated Business Cards</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Animated Business Cards</summary>
 
 ```
 body {
@@ -3103,11 +3084,10 @@ a:hover {
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>HTML</h4>
+<h4>HTML Interactive Photo Gallery</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>HTML</summary>
-
+  <summary>HTML Interactive Photo Gallery</summary>
 
 ```
 <!DOCTYPE html>
@@ -3180,10 +3160,10 @@ a:hover {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>CSS</h4>
+<h4>CSS Interactive Photo Gallery</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Interactive Photo Gallery</summary>
 
 ```
 header {
@@ -3290,10 +3270,10 @@ nav button:hover {
 
 </details>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>JS</h4>
+<h4>JS Interactive Photo Gallery</h4>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>JS</summary>
+  <summary>JS Interactive Photo Gallery</summary>
 
 ```
 function filterGallery(category) {
@@ -3332,7 +3312,6 @@ document.addEventListener('keydown', function(event) {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch15">15. 10 Best Computer Science Projects To Hone Your Skills</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3343,8 +3322,12 @@ document.addEventListener('keydown', function(event) {
 <h3 id="ch16">16. Text to Speech Converter</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p></p>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>HTML Text to Speech Converter</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <details>
-  <summary>HTML</summary>
+  <summary>HTML Text to Speech Converter</summary>
 
 ```
 <!DOCTYPE html>
@@ -3388,8 +3371,12 @@ document.addEventListener('keydown', function(event) {
 ```
 
 </details>
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>CSS Text to Speech Converter</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <details>
-  <summary>CSS</summary>
+  <summary>CSS Text to Speech Converter</summary>
 
 ```
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -3465,8 +3452,14 @@ body {
 ```
 
 </details>
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<h4>JS Text to Speech Converter</h4>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+
 <details>
-  <summary>JS</summary>
+  <summary>JS Text to Speech Converter</summary>
 
 ```
 const text = document.getElementById("textToConvert");
@@ -3498,7 +3491,6 @@ convertBtn.addEventListener('click', function () {
 ```
 
 </details>
-
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3 id="ch17">17. JavaScript Map Reference</h3>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -3583,6 +3575,6 @@ created using the new keyword.</p>
 | values()	     | Return a new Iterator object that contains the value of each element present in Map. |
 
 <details>
-  <summary>HTML</summary>
+  <summary>HTML Map Reference</summary>
   
 </details>
