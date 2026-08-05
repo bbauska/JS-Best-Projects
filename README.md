@@ -3529,9 +3529,11 @@ console.log(arrayMap.get('key2'));  // Output: "value2"
 console.log(arrayMap.get('key3'));  // Output: "value3"
 ```
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <h4>Create a Map and use Map.set()</h4>
 <p>Example: In this example, an empty Map is created, and then key-value pairs are added using the 
 Map.set() method. This approach is useful when you want to dynamically build a Map during runtime.</p>
+
 
 ```
 // Create an empty Map and use Map.set() to add key-value pairs
@@ -3566,6 +3568,7 @@ created using the new keyword.</p>
 | constructor | It is used to return the constructor function of Map. |
 | size	      |  Return the number of keys, and value pairs stored in a map. |
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <p><b>JavaScript Map Methods:</b> JavaScript methods are actions that can be performed on objects.</p>
 
 <p><b>Instance Methods:</b> If the method is called on the instance of a Map then it is called an instance method of Map.</p>
